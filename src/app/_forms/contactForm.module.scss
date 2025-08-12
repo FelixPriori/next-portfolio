@@ -1,0 +1,44 @@
+.formInputWrapper {
+	margin: 1.5rem 0;
+}
+
+.label {
+	margin-bottom: 0.25rem;
+	margin-left: 2px;
+	font-size: 1.15rem;
+	font-weight: 600;
+}
+
+.input {
+	box-sizing: inherit;
+	padding: var(--padding-input);
+	display: block;
+	width: 100%;
+	border: 2px solid transparent;
+	border-radius: var(--radius-box);
+
+	&:focus-within {
+		outline: 2px solid var(--color-primary-light);
+		outline-offset: 2px;
+	}
+}
+
+.textArea {
+	box-sizing: inherit;
+	display: block;
+	width: 100%;
+	padding: var(--padding-input);
+	border: 2px solid transparent;
+	border-radius: var(--radius-box);
+
+	&:focus-within {
+		outline: 2px solid var(--color-primary-light);
+		outline-offset: 2px;
+	}
+}
+
+.buttonWrapper {
+	display: flex;
+	justify-content: flex-end;
+	width: 100%;
+}

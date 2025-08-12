@@ -1,0 +1,29 @@
+.sourceCodeLink {
+	display: flex;
+	align-items: center;
+	padding: 0;
+	margin: 0;
+	max-width: fit-content;
+	transition: all 250ms ease-in-out;
+
+	svg {
+		margin-left: 1rem;
+		height: var(--size-svg);
+		width: var(--size-svg);
+		fill: var(--color-light);
+		transition: all 250ms ease-in-out;
+	}
+
+	&:hover {
+		color: var(--color-primary-light);
+		svg {
+			fill: var(--color-primary-light);
+		}
+	}
+
+	&:focus {
+		outline: 2px solid var(--color-primary-light);
+		outline-offset: 2px;
+		border-radius: var(--radius-box);
+	}
+}

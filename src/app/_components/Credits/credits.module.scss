@@ -1,0 +1,6 @@
+.creditsLink {
+	transition: all 250ms ease-in-out;
+	&:hover {
+		color: var(--color-primary-light);
+	}
+}

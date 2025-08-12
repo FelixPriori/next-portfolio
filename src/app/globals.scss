@@ -1,0 +1,139 @@
+@use 'sass:color';
+
+:root {
+	/* COLORS */
+	--color-light: #eceff4;
+	--color-dark: #2e3440;
+	--color-primary-dark: #3b4252;
+	--color-primary: #5e81ac;
+	--color-primary-light: #88c0d0;
+	--color-primary-lighter: #d8dee9;
+	--color-secondary: #bf616a;
+	--color-highlight-darkest: #3a3222;
+	--color-highlight-darker: #877248;
+	--color-highlight: #ebcb8b;
+	--color-shoppies-light: #f8f9fa;
+
+	--color-background: var(--color-light);
+	--color-background-footer: var(--color-primary-dark);
+	--color-text: var(--color-primary-dark);
+	--color-link: var(--color-primary);
+	--color-link-hover: var(--color-primary-dark);
+
+	/* RADIUS */
+	--radius-icon: 0.25rem;
+	--radius-box: 0.375rem;
+	--radius-full: 50%;
+
+	/* PADDING */
+	--padding-y: 0.75rem;
+	--padding-button: var(--padding-y) 2rem;
+	--padding-input: var(--padding-y) 1.25rem;
+	--padding-switch: var(--padding-y) 1.5rem;
+	--padding-section-small: 2rem;
+	--padding-section-large: 4rem;
+	--padding-section: var(--padding-section-small) 0;
+
+	/* SHADOW */
+	--shadow-image: 1px 1px 10px var(--color-dark);
+	--shadow-testimonial: 5px 5px 10px var(--color-primary);
+
+	/* SIZE */
+	--size-svg: 32px;
+}
+
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	background-color: var(--color-background);
+	font-family: var(--font-nunito);
+	color: var(--color-text);
+
+	&.dark {
+		-webkit-font-smoothing: antialiased;
+		--color-background: var(--color-primary-dark);
+		--color-background-footer: var(--color-dark);
+		--color-text: var(--color-light);
+		--color-link: var(--color-primary-light);
+		--color-link-hover: var(--color-primary);
+	}
+}
+
+h1 {
+	font-weight: 700;
+	margin: 0;
+	padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+button {
+	font-family: var(--font-nunito);
+	color: var(--color-text);
+}
+
+h2 {
+	margin: 0;
+	padding: 0;
+}
+
+h3 {
+	font-size: 30px;
+	margin: 0;
+	padding: 0;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+}
+
+.form-switch {
+	display: flex;
+	align-items: center;
+
+	.form-label {
+		margin: 0;
+		margin-left: 0.5rem;
+		color: var(--color-text);
+		font-weight: 700;
+		font-size: 1.25rem;
+	}
+	.form-check-input {
+		border-color: var(--bs-body-bg);
+		padding: var(--padding-switch);
+		margin-top: 0;
+
+		&:checked {
+			background-color: var(--color-highlight);
+			border-color: var(--color-highlight);
+
+			&:focus {
+				border-color: var(--color-highlight);
+			}
+		}
+
+		&:focus {
+			box-shadow: none;
+			outline: 2px solid var(--color-primary-light);
+			outline-offset: 2px;
+		}
+	}
+}

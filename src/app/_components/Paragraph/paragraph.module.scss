@@ -1,0 +1,25 @@
+.paragraph {
+	margin: 0;
+	padding: 1rem 0;
+	line-height: 180%;
+	letter-spacing: 0.15ch;
+
+	&:first-of-type {
+		padding-top: 0;
+	}
+	&:not(:last-of-type) {
+		padding-bottom: 0;
+	}
+}
+.mark {
+	margin: 0 -0.2em;
+	padding: 0.1em 0.25em;
+	border-radius: 0.8em 0.3em;
+	background-image: linear-gradient(
+		to right,
+		rgba(235, 203, 139, 0.3),
+		rgba(235, 203, 139, 0.9) 2%,
+		rgba(235, 203, 139, 0.5)
+	);
+	box-decoration-break: clone;
+}

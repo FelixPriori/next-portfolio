@@ -1,0 +1,40 @@
+.list {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.listItem {
+	margin: 0.5rem;
+}
+
+.iconLink {
+	color: var(--color-text);
+	font-size: 20px;
+	transition: color 200ms ease-in;
+
+	svg {
+		height: var(--size-svg);
+		width: var(--size-svg);
+		fill: var(--color-text);
+		transition: fill 200ms ease-in;
+	}
+
+	&:hover {
+		text-decoration: none;
+		color: var(--color-primary-light);
+
+		svg {
+			fill: var(--color-primary-light);
+		}
+	}
+
+	&:focus {
+		outline: 2px solid var(--color-primary-light);
+		outline-offset: 2px;
+		border-radius: var(--radius-icon);
+	}
+}

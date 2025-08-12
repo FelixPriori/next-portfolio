@@ -1,0 +1,141 @@
+.headerSection {
+	padding: var(--padding-section);
+	padding-top: var(--padding-section-large);
+}
+
+.heroWrapper {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+}
+
+.textWrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-end;
+
+	@media (max-width: 768px) {
+		align-items: center;
+	}
+}
+
+.textInnerWrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	@media (max-width: 768px) {
+		align-items: center;
+		text-align: center;
+		margin-bottom: 2rem;
+	}
+}
+
+.title {
+	font-size: clamp(2rem, -0.4234rem + 5.0553vw, 4rem);
+	color: var(--color-text);
+
+	@media (max-width: 768px) {
+		font-size: clamp(2.5rem, 1.7857rem + 3.5714vw, 3.5rem);
+		line-height: 0.85;
+	}
+}
+
+.subtitle {
+	font-size: clamp(1.5rem, -0.6205rem + 4.4234vw, 3.25rem);
+	font-weight: 100;
+	line-height: 0.85;
+
+	&.contact {
+		color: var(--color-light);
+	}
+
+	@media (max-width: 768px) {
+		font-size: clamp(2rem, 1.2857rem + 3.5714vw, 3rem);
+	}
+}
+
+.avatarWrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.avatar {
+	border-radius: 50%;
+	box-shadow: '1px 1px 10px black';
+}
+
+.avatarImage {
+	border-radius: 50%;
+}
+
+.buttonContainer {
+	& > a:not(:last-of-type) {
+		margin-right: 0.5em;
+	}
+
+	@media (max-width: 768px) {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+
+		& > a {
+			width: min(100%, 340px);
+
+			&:not(:last-of-type) {
+				margin-bottom: 0.5rem;
+				margin-right: 0;
+			}
+		}
+	}
+}
+
+.sectionWrapper {
+	padding: var(--padding-section);
+	&:last-of-type {
+		padding-bottom: var(--padding-section-large);
+	}
+}
+
+.subtitleWrapper {
+	height: 100%;
+	padding: 1rem 0;
+}
+
+.subtitle {
+	position: relative;
+	margin-bottom: 1rem;
+	&:after {
+		content: '';
+		position: absolute;
+		height: 6px;
+		width: 4rem;
+		bottom: -8px;
+		left: 0;
+		background-color: var(--color-primary-light);
+		border-radius: 6px 0 6px 0;
+	}
+}
+
+.testimonialsWrapper {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+}
+
+.contactWrapper {
+	padding: var(--padding-section);
+	padding-top: var(--padding-section-large);
+	color: var(--color-light);
+	background-color: var(--color-background-footer);
+
+	a {
+		color: var(--color-light);
+	}
+}
+
+.contactFormWrapper {
+	max-width: max(500px, 50%);
+}
