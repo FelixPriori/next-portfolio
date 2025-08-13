@@ -1,69 +1,140 @@
 'use client'
-import React from 'react'
+import React, { useState } from 'react'
 import styles from './contactForm.module.scss'
 import { useForm } from 'react-hook-form'
 import { ErrorMessage } from '@hookform/error-message'
 import { Button, ButtonVariant } from '../_components'
+import { z } from 'zod'
+import { zodResolver } from '@hookform/resolvers/zod'
+import { ErrorParagraph } from '../_components/ErrorParagraph'
+
+function getErrorMessage(error: unknown): string {
+	if (error instanceof Error) {
+		return error.message
+	}
+	if (error && typeof error === 'object' && 'message' in error) {
+		return String(error.message)
+	}
+	if (typeof error === 'string') {
+		return error
+	}
+	return 'An error occured'
+}
+
+const contactSchema = z.object({
+	email: z.email(),
+	name: z.string().min(1, 'Please enter your name!'),
+	message: z.string().min(1, 'Please enter a message!'),
+	botcheck: z.boolean(),
+})
+
+type ContactType = z.infer<typeof contactSchema>
 
 export default function ContactForm() {
+	const [success, setSuccess] = useState(false)
 	const {
 		register,
 		handleSubmit,
 		formState: { errors },
-	} = useForm()
+	} = useForm({
+		resolver: zodResolver(contactSchema),
+	})
 
-	const onSubmit = () => {}
+	async function onSubmit(data: ContactType) {
+		try {
+			const response = await fetch('https://api.web3forms.com/submit', {
+				method: 'POST',
+				headers: {
+					'Content-Type': 'application/json',
+					Accept: 'application/json',
+				},
+				body: JSON.stringify({
+					...data,
+					access_key: '8cdc44ee-a103-4a04-b5d3-834b14c34f51',
+				}),
+			})
+			const result = await response.json()
+			if (result.success) {
+				console.log(result)
+				setSuccess(true)
+			}
+		} catch (error) {
+			console.error(getErrorMessage(error))
+		}
+	}
+
+	if (success) {
+		return (
+			<div className={styles.success}>
+				<svg
+					width="50"
+					height="50"
+					className="text-green-300"
+					viewBox="0 0 100 100"
+					fill="none"
+					xmlns="http://www.w3.org/2000/svg"
+				>
+					<path
+						d="M26.6666 50L46.6666 66.6667L73.3333 33.3333M50 96.6667C43.8716 96.6667 37.8033 95.4596 32.1414 93.1144C26.4796 90.7692 21.3351 87.3317 17.0017 82.9983C12.6683 78.6649 9.23082 73.5204 6.8856 67.8586C4.54038 62.1967 3.33331 56.1283 3.33331 50C3.33331 43.8716 4.54038 37.8033 6.8856 32.1414C9.23082 26.4796 12.6683 21.3351 17.0017 17.0017C21.3351 12.6683 26.4796 9.23084 32.1414 6.88562C37.8033 4.5404 43.8716 3.33333 50 3.33333C62.3767 3.33333 74.2466 8.24998 82.9983 17.0017C91.75 25.7534 96.6666 37.6232 96.6666 50C96.6666 62.3768 91.75 74.2466 82.9983 82.9983C74.2466 91.75 62.3767 96.6667 50 96.6667Z"
+						stroke="currentColor"
+						strokeWidth="3"
+					/>
+				</svg>
+				<p className={styles.successMessage}>Thank you for reaching out!</p>
+				<p>I will get back to you as soon as possible.</p>
+			</div>
+		)
+	}
 
 	return (
-		<form
-			onSubmit={e => handleSubmit(onSubmit)(e)}
-			name="contact-form"
-			method="post"
-			data-netlify="true"
-			netlify-honeypot="bot-field"
-		>
-			<input type="hidden" name="contact-form" value="contact" />
-
+		<form onSubmit={e => handleSubmit(onSubmit)(e)}>
+			<input
+				type="checkbox"
+				className={styles.hidden}
+				{...register('botcheck')}
+			/>
 			<div className={styles.formInputWrapper}>
 				<label className={styles.label} id="name-lbl" htmlFor="contact-name">
-					Name
+					Name <span className={styles.required}>(required)</span>
 				</label>
 				<input
-					className={styles.input}
+					required
+					className={`${styles.input} ${errors.email ? styles.error : ''}`}
 					id="contact-name"
 					aria-labelledby="name-lbl"
 					type="text"
 					placeholder="Your name"
 					autoComplete="on"
-					{...register('name', { required: 'Name is required' })}
+					{...register('name')}
 				/>
 				{errors?.name && (
 					<ErrorMessage
 						errors={errors}
 						name="name"
-						render={({ message }) => <p>{message}</p>}
+						render={({ message }) => <ErrorParagraph>{message}</ErrorParagraph>}
 					/>
 				)}
 			</div>
 
 			<div className={styles.formInputWrapper}>
 				<label className={styles.label} id="email-lbl" htmlFor="contact-email">
-					Email
+					Email <span className={styles.required}>(required)</span>
 				</label>
 				<input
-					className={styles.input}
+					required
+					className={`${styles.input} ${errors.message ? styles.error : ''}`}
 					id="contact-email"
 					aria-labelledby="email-lbl"
 					type="email"
 					placeholder="example@example.ca"
 					autoComplete="on"
-					{...register('email', { required: 'Email is required' })}
+					{...register('email')}
 				/>
 				{errors?.email && (
 					<ErrorMessage
 						errors={errors}
 						name="email"
-						render={({ message }) => <p>{message}</p>}
+						render={({ message }) => <ErrorParagraph>{message}</ErrorParagraph>}
 					/>
 				)}
 			</div>
@@ -74,22 +145,23 @@ export default function ContactForm() {
 					id="message-lbl"
 					htmlFor="contact-message"
 				>
-					Message
+					Message <span className={styles.required}>(required)</span>
 				</label>
 				<textarea
-					className={styles.textArea}
+					required
+					className={`${styles.textArea} ${errors.message ? styles.error : ''}`}
 					aria-labelledby="message-lbl"
 					id="contact-message"
 					placeholder="Type your message here..."
 					rows={6}
 					maxLength={500}
-					{...register('message', { required: 'Message is required' })}
+					{...register('message')}
 				/>
 				{errors?.message && (
 					<ErrorMessage
 						errors={errors}
 						name="message"
-						render={({ message }) => <p>{message}</p>}
+						render={({ message }) => <ErrorParagraph>{message}</ErrorParagraph>}
 					/>
 				)}
 			</div>

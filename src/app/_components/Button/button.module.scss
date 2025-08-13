@@ -9,6 +9,7 @@
 	text-decoration: none;
 	font-family: var(--font-nunito);
 	border-radius: var(--radius-box);
+	cursor: pointer;
 
 	&:focus {
 		outline: 2px solid var(--color-primary-light);

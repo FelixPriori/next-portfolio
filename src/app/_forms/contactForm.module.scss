@@ -3,16 +3,21 @@
 }
 
 .label {
-	margin-bottom: 0.25rem;
 	margin-left: 2px;
 	font-size: 1.15rem;
+	line-height: 200%;
 	font-weight: 600;
+
+	.required {
+		font-size: 14px;
+		color: var(--color-highlight);
+		vertical-align: super;
+	}
 }
 
 .input {
 	box-sizing: inherit;
 	padding: var(--padding-input);
-	display: block;
 	width: 100%;
 	border: 2px solid transparent;
 	border-radius: var(--radius-box);
@@ -20,6 +25,10 @@
 	&:focus-within {
 		outline: 2px solid var(--color-primary-light);
 		outline-offset: 2px;
+	}
+
+	&.error {
+		border: 2px solid var(--color-error);
 	}
 }
 
@@ -35,10 +44,32 @@
 		outline: 2px solid var(--color-primary-light);
 		outline-offset: 2px;
 	}
+
+	&.error {
+		border: 2px solid var(--color-error);
+	}
 }
 
 .buttonWrapper {
 	display: flex;
 	justify-content: flex-end;
 	width: 100%;
+}
+
+.hidden {
+	display: none;
+}
+
+.success {
+	min-height: 360px;
+	margin: 20px 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border: 2px dashed var(--color-primary-light);
+}
+
+.successMessage {
+	font-size: 20px;
 }
