@@ -5,11 +5,13 @@ import {
 	ButtonLink,
 	ButtonVariant,
 	Socials,
+	ToggleTheme,
 } from '../_components'
 
 export default function IntroSection() {
 	return (
 		<section className={styles.headerSection}>
+			<ToggleTheme />
 			<div className={styles.heroWrapper}>
 				<div className={styles.textWrapper}>
 					<div className={styles.textInnerWrapper}>

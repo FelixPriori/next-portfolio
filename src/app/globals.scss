@@ -20,6 +20,7 @@
 	--color-text: var(--color-primary-dark);
 	--color-link: var(--color-primary);
 	--color-link-hover: var(--color-primary-dark);
+	--color-skeleton: var(--color-primary-lighter);
 
 	/* RADIUS */
 	--radius-icon: 0.25rem;
@@ -41,6 +42,16 @@
 
 	/* SIZE */
 	--size-svg: 32px;
+}
+
+.dark {
+	-webkit-font-smoothing: antialiased;
+	--color-background: var(--color-primary-dark);
+	--color-background-footer: var(--color-dark);
+	--color-text: var(--color-light);
+	--color-link: var(--color-primary-light);
+	--color-link-hover: var(--color-primary);
+	--color-skeleton: var(--color-dark);
 }
 
 html {

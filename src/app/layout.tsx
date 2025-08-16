@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Nunito, Rowdies } from 'next/font/google'
 import './globals.scss'
+import ThemeProvider from './_providers/ThemeProvider'
 
 const nunito = Nunito({
 	variable: '--font-nunito',
@@ -24,9 +25,9 @@ export default function RootLayout({
 	children: React.ReactNode
 }>) {
 	return (
-		<html lang="en">
+		<html lang="en" suppressHydrationWarning>
 			<body className={`${nunito.variable} ${rowdies.variable}`}>
-				{children}
+				<ThemeProvider>{children}</ThemeProvider>
 			</body>
 		</html>
 	)
