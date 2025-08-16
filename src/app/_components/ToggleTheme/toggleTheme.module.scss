@@ -33,16 +33,14 @@
 	border-radius: 2rem;
 }
 
-.legend,
-.legend:not(:focus, :focus-within) {
-	border: 0 !important;
-	clip-path: inset(50%) !important; /* 2 */
-	height: 1px !important;
-	margin: -1px !important;
-	overflow: hidden !important;
-	padding: 0 !important;
-	width: 1px !important;
-	white-space: nowrap !important; /* 3 */
+.visuallyHidden:not(:focus):not(:active) {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
 }
 
 .labelWrapper {
