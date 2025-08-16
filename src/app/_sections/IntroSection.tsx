@@ -16,7 +16,7 @@ export default function IntroSection() {
 				<div className={styles.textWrapper}>
 					<div className={styles.textInnerWrapper}>
 						<h1 className={styles.title}>Félix Rioux Sabourin</h1>
-						<h2 className={styles.subtitle}>Professional Web Developer</h2>
+						<h2 className={styles.introSubtitle}>Professional Web Developer</h2>
 					</div>
 				</div>
 				<div className={styles.avatarWrapper}>
