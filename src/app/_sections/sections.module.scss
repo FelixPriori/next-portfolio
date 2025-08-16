@@ -121,6 +121,10 @@
 		background-color: var(--color-primary-light);
 		border-radius: 6px 0 6px 0;
 	}
+
+	&.contact {
+		color: var(--color-light);
+	}
 }
 
 .testimonialsWrapper {
