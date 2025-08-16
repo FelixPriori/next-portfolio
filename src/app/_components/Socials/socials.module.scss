@@ -15,8 +15,10 @@
 	color: var(--color-text);
 	font-size: 20px;
 	transition: color 200ms ease-in;
+	display: block;
 
 	svg {
+		display: block;
 		height: var(--size-svg);
 		width: var(--size-svg);
 		fill: var(--color-text);
