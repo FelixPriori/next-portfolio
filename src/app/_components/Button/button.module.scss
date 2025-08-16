@@ -19,6 +19,7 @@
 	&.blue {
 		background-color: var(--color-primary-light);
 		color: var(--color-dark);
+		border: 1px solid var(--color-primary-light);
 
 		&:hover {
 			$primary-light: #88c0d0;
@@ -29,6 +30,7 @@
 	&.yellow {
 		background-color: var(--color-highlight);
 		color: var(--color-primary-dark);
+		border: 1px solid var(--color-highlight);
 
 		&:hover {
 			$highlight: #ebcb8b;
@@ -40,6 +42,7 @@
 	&.darkOutline {
 		border: 1px solid var(--color-primary-dark);
 		color: var(--color-primary-dark);
+		border: 1px solid var(--color-primary-dark);
 
 		&:hover {
 			border: 1px solid var(--color-dark);
@@ -50,6 +53,7 @@
 	&.submit {
 		background-color: var(--color-highlight);
 		color: var(--color-primary-dark);
+		border: 1px solid var(--color-highlight);
 
 		&:hover {
 			$highlight: #ebcb8b;
@@ -60,6 +64,7 @@
 	&.red {
 		border: 1px solid var(--color-secondary);
 		color: var(--color-secondary);
+		border: 1px solid var(--color-secondary);
 
 		div {
 			display: flex;
