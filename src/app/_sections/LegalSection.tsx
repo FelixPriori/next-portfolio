@@ -21,7 +21,7 @@ export default function LegalSection() {
 						linkHref="https://nextjs.org/"
 					/>
 					<MadeWith
-						preText="Deployed on"
+						preText="Hosted on"
 						icon={Icon.VERCEL}
 						linkText="Vercel"
 						linkHref="https://vercel.com/f"

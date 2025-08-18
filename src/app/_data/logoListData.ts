@@ -1,4 +1,4 @@
-import { LogoItemProps } from '@/app/_components/Logo'
+import { LogoItemProps } from '@/app/_components/Logo/LogoItem'
 
 export const logoListData: LogoItemProps[] = [
 	{
