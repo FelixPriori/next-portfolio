@@ -3,7 +3,7 @@ import { workData } from './workData'
 import styles from './sections.module.scss'
 export default function WorkSection() {
 	return (
-		<section id="work-history" className={styles.sectionWrapper}>
+		<section id="work" className={`${styles.sectionWrapper} section`}>
 			<div className={styles.subtitleWraper}>
 				<h2 className={styles.subtitle}>Work History</h2>
 			</div>

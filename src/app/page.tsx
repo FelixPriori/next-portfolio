@@ -7,6 +7,8 @@ import TestimonialsSection from './_sections/TestimonialsSection'
 import TrainingSection from './_sections/TrainingSection'
 import WorkSection from './_sections/WorkSection'
 import styles from './layout.module.scss'
+import { SectionDisplayer } from './_components/SectionDisplayer'
+import LegalSectioin from './_sections/LegalSection'
 
 export const metadata: Metadata = {
 	title: "Felix's Porftolio",
@@ -17,6 +19,7 @@ export default function Home() {
 	return (
 		<div>
 			<main className={styles.main}>
+				<SectionDisplayer />
 				<IntroSection />
 				<AboutSection />
 				<TechnologiesSection />
@@ -24,7 +27,10 @@ export default function Home() {
 				<TrainingSection />
 				<TestimonialsSection />
 			</main>
-			<ContactSection />
+			<footer>
+				<ContactSection />
+				<LegalSectioin />
+			</footer>
 		</div>
 	)
 }

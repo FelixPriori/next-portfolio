@@ -4,7 +4,7 @@ import { trainingData } from './trainingData'
 
 export default function TrainingSection() {
 	return (
-		<section id="training" className={styles.sectionWrapper}>
+		<section id="training" className={`${styles.sectionWrapper} section`}>
 			<div className={styles.subtitleWraper}>
 				<h2 className={styles.subtitle}>Training</h2>
 			</div>

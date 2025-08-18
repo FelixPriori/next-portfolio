@@ -59,6 +59,12 @@
 			$highlight: #ebcb8b;
 			background-color: color.adjust($highlight, $lightness: -10%);
 		}
+
+		&:focus,
+		&:focus-visible,
+		&:focus-within {
+			outline: 2px solid var(--color-footer-input-outline);
+		}
 	}
 
 	&.red {

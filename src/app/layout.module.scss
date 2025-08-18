@@ -4,15 +4,19 @@
 	margin-right: auto;
 	margin-left: auto;
 	@media (max-width: 576px) {
+		padding-left: 2rem;
 		max-width: 100%;
 	}
 	@media (min-width: 576px) {
+		padding-left: 2rem;
 		max-width: 540px;
 	}
 	@media (min-width: 768px) {
+		padding-left: 2rem;
 		max-width: 720px;
 	}
 	@media (min-width: 992px) {
+		padding-left: calc(2rem + 150px);
 		max-width: 960px;
 	}
 	@media (min-width: 1200px) {

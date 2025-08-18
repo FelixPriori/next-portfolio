@@ -34,10 +34,11 @@
 .title {
 	font-size: clamp(2rem, -0.4234rem + 5.0553vw, 4rem);
 	color: var(--color-text);
+	margin-bottom: 0.5rem;
+	line-height: 0.85;
 
 	@media (max-width: 768px) {
 		font-size: clamp(2.5rem, 1.7857rem + 3.5714vw, 3.5rem);
-		line-height: 0.85;
 	}
 }
 
@@ -123,7 +124,9 @@
 	}
 
 	&.contact {
-		color: var(--color-light);
+		&:after {
+			background-color: var(--color-highlight);
+		}
 	}
 }
 
@@ -135,14 +138,54 @@
 .contactWrapper {
 	padding: var(--padding-section);
 	padding-top: var(--padding-section-large);
-	color: var(--color-light);
 	background-color: var(--color-background-footer);
-
-	a {
-		color: var(--color-light);
-	}
 }
 
 .contactFormWrapper {
 	max-width: max(500px, 50%);
+}
+
+.legalWrapper {
+	background-color: var(--color-dark);
+	color: var(--color-legal-text);
+}
+
+.legalContents {
+	padding: var(--padding-section);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	gap: 0.5rem;
+}
+
+.madeWith {
+	display: flex;
+	align-items: center;
+	svg {
+		margin-right: 1rem;
+		height: var(--size-svg);
+		width: var(--size-svg);
+	}
+
+	a {
+		margin-left: 0.25rem;
+		display: flex;
+		align-items: center;
+		color: var(--color-legal-text);
+		text-underline-offset: 3px;
+		text-decoration-thickness: 2px;
+		transition: all 250ms ease-in-out;
+
+		&:visited {
+			color: var(--color-primary-light);
+		}
+		&:focus {
+			outline: 2px solid var(--color-primary-light);
+			outline-offset: 4px;
+		}
+		&:hover {
+			color: var(--color-primary-light);
+		}
+	}
 }

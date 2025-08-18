@@ -16,11 +16,15 @@
 	--color-shoppies-light: #f8f9fa;
 
 	--color-background: var(--color-light);
-	--color-background-footer: var(--color-primary-dark);
+	--color-background-footer: var(--color-primary-light);
 	--color-text: var(--color-primary-dark);
 	--color-link: var(--color-primary);
 	--color-link-hover: var(--color-primary-dark);
 	--color-skeleton: var(--color-primary-lighter);
+	--color-footer-input-outline: var(--color-primary-dark);
+	--color-footer-link-hover: var(--color-primary-dark);
+	--color-footer-required: var(--color-text);
+	--color-legal-text: var(--color-light);
 
 	/* RADIUS */
 	--radius-icon: 0.25rem;
@@ -52,6 +56,9 @@
 	--color-link: var(--color-primary-light);
 	--color-link-hover: var(--color-primary);
 	--color-skeleton: var(--color-dark);
+	--color-footer-input-outline: var(--color-primary-light);
+	--color-footer-link-hover: var(--color-primary-light);
+	--color-footer-required: var(--color-highlight);
 }
 
 html {

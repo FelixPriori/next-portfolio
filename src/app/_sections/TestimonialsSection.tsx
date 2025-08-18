@@ -3,7 +3,7 @@ import styles from './sections.module.scss'
 import { testimonialData } from './testimonialsData'
 export default function TestimonialsSection() {
 	return (
-		<section id="testimonials" className={styles.sectionWrapper}>
+		<section id="testimonials" className={`${styles.sectionWrapper} section`}>
 			<div className={styles.subtitleWraper}>
 				<h2 className={styles.subtitle}>Testimonials</h2>
 			</div>

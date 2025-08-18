@@ -2,7 +2,7 @@ import { Mark, Paragraph } from '../_components'
 import styles from './sections.module.scss'
 export default function AboutSection() {
 	return (
-		<section id="about" className={styles.sectionWrapper}>
+		<section id="about" className={`${styles.sectionWrapper} section`}>
 			<div className={styles.subtitleWraper}>
 				<h2 className={styles.subtitle}>About Me</h2>
 			</div>

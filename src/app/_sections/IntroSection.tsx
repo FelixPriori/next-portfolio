@@ -10,7 +10,7 @@ import {
 
 export default function IntroSection() {
 	return (
-		<section className={styles.headerSection}>
+		<section className={`${styles.headerSection} section`} id="intro">
 			<ToggleTheme />
 			<div className={styles.heroWrapper}>
 				<div className={styles.textWrapper}>
