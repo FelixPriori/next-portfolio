@@ -159,33 +159,9 @@
 	gap: 0.5rem;
 }
 
-.madeWith {
-	display: flex;
-	align-items: center;
-	svg {
-		margin-right: 1rem;
-		height: var(--size-svg);
-		width: var(--size-svg);
-	}
-
-	a {
-		margin-left: 0.25rem;
-		display: flex;
-		align-items: center;
-		color: var(--color-legal-text);
-		text-underline-offset: 3px;
-		text-decoration-thickness: 2px;
-		transition: all 250ms ease-in-out;
-
-		&:visited {
-			color: var(--color-primary-light);
-		}
-		&:focus {
-			outline: 2px solid var(--color-primary-light);
-			outline-offset: 4px;
-		}
-		&:hover {
-			color: var(--color-primary-light);
-		}
-	}
+.copyright {
+	margin-top: 1rem;
+	font-size: 14px;
+	text-align: center;
+	align-self: center;
 }

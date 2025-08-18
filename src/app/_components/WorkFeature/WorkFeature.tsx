@@ -22,7 +22,11 @@ export default function WorkFeature({
 	return (
 		<div>
 			<div className={styles.workLogoWrapper}>
-				<FeatureLogo alt={`${companyName} Logo`} src={logoSrc} />
+				<FeatureLogo
+					companyName={companyName}
+					alt={`${companyName} Logo`}
+					src={logoSrc}
+				/>
 				<div>
 					<h3 className={styles.companyName}>{companyName}</h3>
 					<p className={`${styles.paragraph} ${styles.position}`}>{position}</p>
