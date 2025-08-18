@@ -1,6 +1,6 @@
 import { IoLogoGithub } from 'react-icons/io5'
 import { FaBluesky } from 'react-icons/fa6'
-import { FaLinkedin } from 'react-icons/fa'
+import { FaLinkedin, FaRegCopyright } from 'react-icons/fa'
 import { HiOutlineDesktopComputer } from 'react-icons/hi'
 import { GoRocket } from 'react-icons/go'
 import { AiFillSun, AiFillMoon } from 'react-icons/ai'
@@ -21,6 +21,7 @@ export enum Icon {
 	INDEPENDENT = 'INDEPENDENT',
 	SUN = 'SUN',
 	MOON = 'MOON',
+	COPYRIGHT = 'COPYRIGHT',
 }
 
 export default function SvgIcon({ icon }: { icon: Icon }) {
@@ -202,6 +203,8 @@ export default function SvgIcon({ icon }: { icon: Icon }) {
 			return <AiFillSun />
 		case Icon.MOON:
 			return <AiFillMoon />
+		case Icon.COPYRIGHT:
+			return <FaRegCopyright />
 		default:
 			return <></>
 	}

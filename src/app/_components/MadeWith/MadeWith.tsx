@@ -3,8 +3,8 @@ import styles from './madeWith.module.scss'
 
 interface MadeWithProps {
 	icon: Icon
-	linkText: string
-	linkHref: string
+	linkText?: string
+	linkHref?: string
 	preText?: string
 	postText?: string
 }
@@ -20,9 +20,11 @@ export default function MadeWith({
 		<p className={styles.madeWith}>
 			<SvgIcon icon={icon} />
 			{preText}
-			<a href={linkHref} target="_blank" rel="noreferrer">
-				{linkText}
-			</a>
+			{linkText && linkHref && (
+				<a href={linkHref} target="_blank" rel="noreferrer">
+					{linkText}
+				</a>
+			)}
 			{postText}
 		</p>
 	)

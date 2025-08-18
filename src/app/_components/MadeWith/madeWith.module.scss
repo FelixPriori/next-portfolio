@@ -1,11 +1,12 @@
 .madeWith {
 	display: flex;
 	align-items: center;
+	font-size: 14px;
 
 	svg {
 		margin-right: 1rem;
-		height: var(--size-svg);
-		width: var(--size-svg);
+		height: var(--size-footer-svg);
+		width: var(--size-footer-svg);
 		color: var(--color-light);
 	}
 

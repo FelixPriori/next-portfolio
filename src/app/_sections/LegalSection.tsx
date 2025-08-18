@@ -26,7 +26,7 @@ export default function LegalSection() {
 						linkText="Vercel"
 						linkHref="https://vercel.com/f"
 					/>
-					<p className={styles.copyright}>&#169; Felix Rioux Sabourin 2025</p>
+					<MadeWith preText="Felix Rioux Sabourin 2025" icon={Icon.COPYRIGHT} />
 				</div>
 			</div>
 		</div>
