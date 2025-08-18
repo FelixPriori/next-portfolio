@@ -20,7 +20,11 @@ export default function TrainingFeature({
 	return (
 		<div>
 			<div className={styles.featureLogoWrapper}>
-				<FeatureLogo src={logoSrc} alt={`${companyName}'s logo`} />
+				<FeatureLogo
+					companyName={companyName}
+					src={logoSrc}
+					alt={`${companyName}'s logo`}
+				/>
 				<div>
 					<h3 className={styles.companyName}>{companyName}</h3>
 					<p className={`${styles.paragraph} ${styles.position}`}>
