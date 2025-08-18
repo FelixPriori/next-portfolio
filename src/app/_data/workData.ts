@@ -27,10 +27,10 @@ export const workData = [
 		logoSrc: '/nurun.png',
 	},
 	{
-		companyName: 'Independant',
+		companyName: 'Independent',
 		position: 'Freelance Web Developer',
 		dateRange: '2024/04 - Current',
-		descriptionTitle: 'Independance & Reliability',
+		descriptionTitle: 'Independence & Reliability',
 		description:
 			'I have been working as a freelance web developer since April 2024, building static websites as well as web applications. As an independent dev, I have been putting my skills to the test while working on and contributing to a couple of projects such as Rue Dorion, TimeStep, MontrealSwingCalendar, Campus Balboa, and MTL BAL JAM. I have been using technologies such as Next.js and Gatsby.js for static website generation, coupled with Contentful as a headless CMS. For web applications with a dedicated backend, I have collaborated with an AWS engineer using Node.js, AppSync, Amplify, and Cognito, in GraphQL. My focus has been learning as much as I can while working on these projects, making sure to keep up with current techs and taking Udemy courses on the side.',
 		logoSrc: '/independant.png',
