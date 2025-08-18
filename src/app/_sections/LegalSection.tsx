@@ -1,9 +1,8 @@
-import { Icon } from '../_components'
+import { Icon, MadeWith } from '@/app/_components'
 import styles from './sections.module.scss'
 import layoutStyles from '../layout.module.scss'
-import { MadeWith } from '../_components/MadeWith'
 
-export default function LegalSectioin() {
+export default function LegalSection() {
 	return (
 		<div className={styles.legalWrapper}>
 			<div className={layoutStyles.main}>

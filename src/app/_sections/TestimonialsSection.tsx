@@ -1,6 +1,7 @@
-import TestimonialFeature from '../_components/TestimonialFeature/TestimonialFeature'
+import { TestimonialFeature } from '@/app/_components'
+import { testimonialData } from '@/app/_data'
 import styles from './sections.module.scss'
-import { testimonialData } from './testimonialsData'
+
 export default function TestimonialsSection() {
 	return (
 		<section id="testimonials" className={`${styles.sectionWrapper} section`}>

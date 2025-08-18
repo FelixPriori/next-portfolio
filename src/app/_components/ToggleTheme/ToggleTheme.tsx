@@ -1,7 +1,7 @@
 'use client'
-import { useTheme } from 'next-themes'
 import { useEffect, useState } from 'react'
-import { AiFillSun, AiFillMoon } from 'react-icons/ai'
+import { useTheme } from 'next-themes'
+import { Icon, SvgIcon } from '../SvgIcon'
 import styles from './toggleTheme.module.scss'
 
 export default function ToggleTheme() {
@@ -55,7 +55,7 @@ export default function ToggleTheme() {
 						/>
 						<span className={styles.visuallyHidden}>Light Theme</span>
 						<div className={styles.svgContainer}>
-							<AiFillSun />
+							<SvgIcon icon={Icon.SUN} />
 						</div>
 					</label>
 					<label
@@ -83,7 +83,7 @@ export default function ToggleTheme() {
 						/>
 						<span className={styles.visuallyHidden}>Dark Theme</span>
 						<div className={styles.svgContainer}>
-							<AiFillMoon />
+							<SvgIcon icon={Icon.MOON} />
 						</div>
 					</label>
 				</div>

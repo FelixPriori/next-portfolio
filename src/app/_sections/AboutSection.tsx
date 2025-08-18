@@ -1,5 +1,6 @@
-import { Mark, Paragraph } from '../_components'
+import { Mark, Paragraph } from '@/app/_components'
 import styles from './sections.module.scss'
+
 export default function AboutSection() {
 	return (
 		<section id="about" className={`${styles.sectionWrapper} section`}>

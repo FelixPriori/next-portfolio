@@ -1,14 +1,16 @@
 import { Metadata } from 'next'
-import AboutSection from './_sections/AboutSection'
-import ContactSection from './_sections/ContactSection'
-import IntroSection from './_sections/IntroSection'
-import TechnologiesSection from './_sections/TechnologiesSection'
-import TestimonialsSection from './_sections/TestimonialsSection'
-import TrainingSection from './_sections/TrainingSection'
-import WorkSection from './_sections/WorkSection'
+import { SectionDisplayer } from '@/app/_components'
+import {
+	IntroSection,
+	AboutSection,
+	TechnologiesSection,
+	WorkSection,
+	TrainingSection,
+	TestimonialsSection,
+	ContactSection,
+	LegalSection,
+} from './_sections'
 import styles from './layout.module.scss'
-import { SectionDisplayer } from './_components/SectionDisplayer'
-import LegalSectioin from './_sections/LegalSection'
 
 export const metadata: Metadata = {
 	title: "Felix's Porftolio",
@@ -29,7 +31,7 @@ export default function Home() {
 			</main>
 			<footer>
 				<ContactSection />
-				<LegalSectioin />
+				<LegalSection />
 			</footer>
 		</div>
 	)

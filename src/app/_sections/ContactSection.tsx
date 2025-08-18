@@ -1,7 +1,7 @@
+import { Paragraph } from '@/app/_components'
+import ContactForm from '@/app/_forms/ContactForm'
 import styles from './sections.module.scss'
 import layoutStyles from '../layout.module.scss'
-import { Paragraph } from '../_components'
-import ContactForm from '../_forms/ContactForm'
 
 export default function ContactSection() {
 	return (

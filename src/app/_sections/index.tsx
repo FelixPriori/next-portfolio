@@ -1,0 +1,8 @@
+export { default as IntroSection } from './IntroSection'
+export { default as AboutSection } from './AboutSection'
+export { default as TechnologiesSection } from './TechnologiesSection'
+export { default as WorkSection } from './WorkSection'
+export { default as TrainingSection } from './TrainingSection'
+export { default as TestimonialsSection } from './TestimonialsSection'
+export { default as ContactSection } from './ContactSection'
+export { default as LegalSection } from './LegalSection'

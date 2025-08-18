@@ -1,4 +1,3 @@
-import styles from './sections.module.scss'
 import Image from 'next/image'
 import {
 	ButtonExternalLink,
@@ -6,7 +5,8 @@ import {
 	ButtonVariant,
 	Socials,
 	ToggleTheme,
-} from '../_components'
+} from '@/app/_components'
+import styles from './sections.module.scss'
 
 export default function IntroSection() {
 	return (

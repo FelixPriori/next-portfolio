@@ -1,7 +1,6 @@
 import Image, { ImageProps } from 'next/image'
 import styles from './featureLogo.module.scss'
-import { HiOutlineDesktopComputer } from 'react-icons/hi'
-import { GoRocket } from 'react-icons/go'
+import { Icon, SvgIcon } from '../SvgIcon'
 
 interface FeatureLogoProps
 	extends Omit<ImageProps, 'className' | 'width' | 'height'> {
@@ -17,13 +16,13 @@ export default function FeatureLogo({
 	if (companyName === 'Independant') {
 		return (
 			<div className={styles.reactIcon}>
-				<HiOutlineDesktopComputer />
+				<SvgIcon icon={Icon.INDEPENDENT} />
 			</div>
 		)
 	} else if (companyName === 'The future') {
 		return (
 			<div className={styles.reactIcon}>
-				<GoRocket />
+				<SvgIcon icon={Icon.ROCKET} />
 			</div>
 		)
 	}

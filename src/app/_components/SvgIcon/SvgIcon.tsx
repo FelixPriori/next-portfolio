@@ -1,6 +1,9 @@
 import { IoLogoGithub } from 'react-icons/io5'
 import { FaBluesky } from 'react-icons/fa6'
 import { FaLinkedin } from 'react-icons/fa'
+import { HiOutlineDesktopComputer } from 'react-icons/hi'
+import { GoRocket } from 'react-icons/go'
+import { AiFillSun, AiFillMoon } from 'react-icons/ai'
 
 export enum Icon {
 	BOOTSTRAP = 'BOOTSTRAP',
@@ -14,6 +17,10 @@ export enum Icon {
 	REACT = 'REACT',
 	NEXT = 'NEXT',
 	VERCEL = 'VERCEL',
+	ROCKET = 'ROCKET',
+	INDEPENDENT = 'INDEPENDENT',
+	SUN = 'SUN',
+	MOON = 'MOON',
 }
 
 export default function SvgIcon({ icon }: { icon: Icon }) {
@@ -187,6 +194,14 @@ export default function SvgIcon({ icon }: { icon: Icon }) {
 					<path d="M577.344 0L1154.69 1000H0L577.344 0Z" fill="white" />
 				</svg>
 			)
+		case Icon.INDEPENDENT:
+			return <HiOutlineDesktopComputer />
+		case Icon.ROCKET:
+			return <GoRocket />
+		case Icon.SUN:
+			return <AiFillSun />
+		case Icon.MOON:
+			return <AiFillMoon />
 		default:
 			return <></>
 	}

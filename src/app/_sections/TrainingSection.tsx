@@ -1,6 +1,6 @@
-import TrainingFeature from '../_components/TrainingFeature/TrainingFeature'
+import { TrainingFeature } from '@/app/_components'
+import { trainingData } from '@/app/_data'
 import styles from './sections.module.scss'
-import { trainingData } from './trainingData'
 
 export default function TrainingSection() {
 	return (

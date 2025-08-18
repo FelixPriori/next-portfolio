@@ -1,34 +1,12 @@
 'use client'
 import React, { useState } from 'react'
-import styles from './contactForm.module.scss'
 import { useForm } from 'react-hook-form'
 import { ErrorMessage } from '@hookform/error-message'
-import { Button, ButtonVariant } from '../_components'
-import { z } from 'zod'
 import { zodResolver } from '@hookform/resolvers/zod'
-import { ErrorParagraph } from '../_components/ErrorParagraph'
-
-function getErrorMessage(error: unknown): string {
-	if (error instanceof Error) {
-		return error.message
-	}
-	if (error && typeof error === 'object' && 'message' in error) {
-		return String(error.message)
-	}
-	if (typeof error === 'string') {
-		return error
-	}
-	return 'An error occured'
-}
-
-const contactSchema = z.object({
-	email: z.email(),
-	name: z.string().min(1, 'Please enter your name!'),
-	message: z.string().min(1, 'Please enter a message!'),
-	botcheck: z.boolean(),
-})
-
-type ContactType = z.infer<typeof contactSchema>
+import { getErrorMessage } from '@/app/_utils/errors'
+import { Button, ButtonVariant, ErrorParagraph } from '@/app/_components'
+import { contactSchema, ContactType } from './schema'
+import styles from './contactForm.module.scss'
 
 export default function ContactForm() {
 	const [success, setSuccess] = useState(false)
@@ -50,12 +28,11 @@ export default function ContactForm() {
 				},
 				body: JSON.stringify({
 					...data,
-					access_key: '8cdc44ee-a103-4a04-b5d3-834b14c34f51',
+					access_key: '8cdc44ee-a103-4a04-b5d3-834b14c34f51', // this is public
 				}),
 			})
 			const result = await response.json()
 			if (result.success) {
-				console.log(result)
 				setSuccess(true)
 			}
 		} catch (error) {

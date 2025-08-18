@@ -1,6 +1,7 @@
-import WorkFeature from '../_components/WorkFeature/WorkFeature'
-import { workData } from './workData'
+import { WorkFeature } from '@/app/_components'
+import { workData } from '@/app/_data'
 import styles from './sections.module.scss'
+
 export default function WorkSection() {
 	return (
 		<section id="work" className={`${styles.sectionWrapper} section`}>

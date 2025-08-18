@@ -1,6 +1,7 @@
 'use client'
 import useSectionTracker from '@/app/_hooks/useSectionTracker'
 import styles from './sectionDisplayer.module.scss'
+
 export default function SectionDisplayer() {
 	const currentSection = useSectionTracker()
 	return (

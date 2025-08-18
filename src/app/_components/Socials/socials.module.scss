@@ -14,7 +14,6 @@
 .iconLink {
 	color: var(--color-text);
 	font-size: 20px;
-	transition: color 200ms ease-in;
 	display: block;
 
 	svg {
@@ -22,7 +21,6 @@
 		height: var(--size-svg);
 		width: var(--size-svg);
 		fill: var(--color-text);
-		transition: fill 200ms ease-in;
 	}
 
 	&:hover {

@@ -1,6 +1,6 @@
-import { LogoItemProps } from '.'
+import { LogoItemProps } from '@/app/_components/Logo'
 
-export const logoList: LogoItemProps[] = [
+export const logoListData: LogoItemProps[] = [
 	{
 		name: 'React.js',
 		alt: 'React Logo',
