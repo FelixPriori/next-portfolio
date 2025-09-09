@@ -1,8 +1,13 @@
 'use client'
 import useSectionTracker from '@/app/_hooks/useSectionTracker'
 import styles from './sectionDisplayer.module.scss'
+import { DictionaryType } from '@/dictionaries'
 
-export default function SectionDisplayer() {
+export default function SectionDisplayer({
+	navigation,
+}: {
+	navigation: DictionaryType['navigation']
+}) {
 	const currentSection = useSectionTracker()
 	return (
 		<div className={styles.sectionDisplayerWrapper}>
@@ -15,7 +20,7 @@ export default function SectionDisplayer() {
 					}`}
 					href="#intro"
 				>
-					About
+					{navigation.about}
 				</a>
 				<a
 					className={`${
@@ -23,19 +28,19 @@ export default function SectionDisplayer() {
 					}`}
 					href="#technologies"
 				>
-					Technologies
+					{navigation.technologies}
 				</a>
 				<a
 					className={`${currentSection === 'work' ? styles.current : ''}`}
 					href="#work"
 				>
-					Work History
+					{navigation.work}
 				</a>
 				<a
 					className={`${currentSection === 'training' ? styles.current : ''}`}
 					href="#training"
 				>
-					Training
+					{navigation.training}
 				</a>
 				<a
 					className={`${
@@ -43,13 +48,13 @@ export default function SectionDisplayer() {
 					}`}
 					href="#testimonials"
 				>
-					Testimonials
+					{navigation.testimonials}
 				</a>
 				<a
 					className={`${currentSection === 'contact' ? styles.current : ''}`}
 					href="#contact"
 				>
-					Contact
+					{navigation.contact}
 				</a>
 			</nav>
 		</div>

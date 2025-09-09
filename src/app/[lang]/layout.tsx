@@ -1,6 +1,8 @@
 import { Nunito, Rowdies } from 'next/font/google'
 import ThemeProvider from '@/app/_providers/ThemeProvider'
-import './globals.scss'
+import '@/app/globals.scss'
+import { ReactNode } from 'react'
+import { Locales } from '@/i18n'
 
 const nunito = Nunito({
 	variable: '--font-nunito',
@@ -13,13 +15,15 @@ const rowdies = Rowdies({
 	subsets: ['latin'],
 })
 
-export default function RootLayout({
-	children,
-}: Readonly<{
-	children: React.ReactNode
-}>) {
+type Props = Readonly<{
+	params: Promise<{ lang: Locales }>
+	children: ReactNode
+}>
+
+export default async function RootLayout({ params, children }: Props) {
+	const { lang } = await params
 	return (
-		<html lang="en" suppressHydrationWarning>
+		<html lang={lang} suppressHydrationWarning>
 			<body className={`${nunito.variable} ${rowdies.variable}`}>
 				<ThemeProvider>{children}</ThemeProvider>
 			</body>
