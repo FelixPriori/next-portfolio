@@ -7,7 +7,7 @@ export const testimonialData = [
 	},
 	{
 		personName: 'Sheldon Malboeuf',
-		position: 'Back-end Developer, Nventive',
+		position: 'Full Stack Developer, Chrono Innovation',
 		text: 'I have had the pleasure of working with Felix multiple times throughout my career. Not only, does he create a friendly and collaborative atmosphere, but is attentive to detail. He considers multiple perspectives when choosing his solutions and overall displays the qualities that any development team would see as an asset.',
 		photoSrc: '/sheldon.png',
 	},
