@@ -33,16 +33,16 @@ export const workData = [
 		descriptionTitle: 'Independence & Reliability',
 		description:
 			'I have been working as a freelance web developer since April 2024, building static websites as well as web applications. As an independent dev, I have been putting my skills to the test while working on and contributing to a couple of projects such as Rue Dorion, TimeStep, MontrealSwingCalendar, Campus Balboa, and MTL BAL JAM. I have been using technologies such as Next.js and Gatsby.js for static website generation, coupled with Contentful as a headless CMS. For web applications with a dedicated backend, I have collaborated with an AWS engineer using Node.js, AppSync, Amplify, and Cognito, in GraphQL. My focus has been learning as much as I can while working on these projects, making sure to keep up with current techs and taking Udemy courses on the side.',
-		logoSrc: '/independant.png',
+		logoSrc: '/avatar.jpg',
 	},
 
 	{
 		companyName: 'Traceology.ai',
 		position: 'Consultant Web Development Engineer',
-		dateRange: '2024/10 - Current',
+		dateRange: '2024/11 - Current',
 		descriptionTitle: 'Scalability & Strength',
 		description:
-			'I have been working as a web development engineer consultant at Traceology.ai since November of 2024. It is a startup that has an in-house product which aims to provide more transparency in the field of supply chains. This is a niche product that is currently in high demand partly due to geopolicial reasons. The sheer amount of data that is required for supply chain planners and analysists for this app to be useful creates many challenges and requires creative solutions. Working in a tight-knit team makes this product especially fun to work on: seamless teamwork coupled with a strong communication is crucial for everything to go smoothly.',
+			'I have been working as a web development engineer consultant at Traceology.ai since November of 2024. It is a startup that has an in-house product which aims to provide more transparency in the field of supply chains. This is a niche product that is currently in high demand partly due to geopolitical reasons. The sheer amount of data that is required for supply chain planners and analysts for this app to be useful creates many challenges and requires creative solutions. Working in a tight-knit team makes this product especially fun to work on: seamless teamwork coupled with a strong communication is crucial for everything to go smoothly.',
 		logoSrc: '/traceology.png',
 	},
 	{

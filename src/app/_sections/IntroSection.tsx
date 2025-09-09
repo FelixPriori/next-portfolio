@@ -33,7 +33,7 @@ export default function IntroSection() {
 					<div className={styles.buttonContainer}>
 						<ButtonLink href="#contact">Contact</ButtonLink>
 						<ButtonExternalLink
-							href="https://drive.google.com/file/d/1qgunvpS6rqU_98DTGBvWTcCzCIMHL6sC/view?usp=drive_link"
+							href="https://docs.google.com/document/d/1Y1xdSDuYI6onXKJE_YrqVC3lzU0u194H2ke4_5MZa5I/edit?usp=sharing"
 							target="_blank"
 							rel="noreferrer"
 							variant={ButtonVariant.YELLOW}

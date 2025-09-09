@@ -17,15 +17,14 @@ export default function AboutSection() {
 			</Paragraph>
 			<Paragraph>
 				Since November of 2024, I have been working full time to build an{' '}
-				<Mark>in-house SAAS</Mark> as a{' '}
+				<Mark>in-house SaaS</Mark> as a{' '}
 				<Mark>consultant web development engineer</Mark>, using my expertise to
 				create a one of a kind service in the field of supply chains.
 			</Paragraph>
 			<Paragraph>
-				I thrive most while working in <Mark>tight-knit teams</Mark> and I my
-				biggest satisfaction is to{' '}
-				<Mark>find a great solution to a challenging problem</Mark>. Being in a
-				state of flow while coding is what I love most about being a dev.
+				I thrive working in <Mark>tight-knit teams</Mark>, and am most satisfied
+				when <Mark>find a great solution to a challenging problem</Mark>. Being
+				in a state of flow while coding is what I love most about being a dev.
 			</Paragraph>
 		</section>
 	)
