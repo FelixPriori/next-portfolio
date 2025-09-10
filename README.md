@@ -24,3 +24,6 @@
 ### i18n
 - [FormatJS - Intl.LocaleMatcher](https://formatjs.github.io/docs/polyfills/intl-localematcher/)
 - [negotiator](https://www.npmjs.com/package/negotiator)
+
+### Deployment
+- [Vercel](https://vercel.com/)
