@@ -10,12 +10,7 @@ export default function LogoList({
 	return (
 		<ul className={styles.logoList}>
 			{logoList.map(logo => (
-				<LogoItem
-					key={logo.name}
-					src={logo.src}
-					alt={logo.alt}
-					name={logo.name}
-				/>
+				<LogoItem key={logo.name} {...logo} />
 			))}
 		</ul>
 	)

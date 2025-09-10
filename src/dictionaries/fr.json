@@ -40,61 +40,73 @@
 		"logoList": [
 			{
 				"name": "React.js",
-				"alt": "Logo de React",
-				"src": "/react-32x32.png"
+				"logoStyles": "react",
+				"href": "https://react.dev/"
 			},
 			{
 				"name": "Next.js",
-				"alt": "Logo de NextJs",
-				"src": "/nextjs.png"
+				"logoStyles": "next",
+				"href": "https://nextjs.org/"
 			},
 			{
 				"name": "TypeScript",
-				"alt": "Logo de TypeScript",
-				"src": "/typescript.webp"
+				"logoStyles": "typescript",
+				"href": "https://www.typescriptlang.org/"
 			},
 			{
 				"name": "HTML5",
-				"alt": "Logo de HTML5",
-				"src": "/html5-32x32.png"
+				"logoStyles": "html",
+				"href": "https://developer.mozilla.org/en-US/docs/Web/HTML"
 			},
 			{
 				"name": "CSS3",
-				"alt": "Logo de CSS3",
-				"src": "/css3-32x32.png"
+				"logoStyles": "css",
+				"href": "https://developer.mozilla.org/en-US/docs/Web/CSS"
 			},
 			{
 				"name": "SCSS",
-				"alt": "Logo de SCSS",
-				"src": "/sass.png"
+				"logoStyles": "scss",
+				"href": "https://sass-lang.com/"
 			},
 			{
 				"name": "MaterialUI",
-				"alt": "Logo de MaterialUI",
-				"src": "/materialUI.png"
+				"logoStyles": "materialUi",
+				"href": "https://mui.com/material-ui/"
 			},
 			{
 				"name": "Gatsby.js",
-				"alt": "Logo de Gatsby.js",
-				"src": "/gatsby-monogram.png"
+				"logoStyles": "gatsby",
+				"href": "https://www.gatsbyjs.com/"
 			},
-			{ "name": "Vue.js", "alt": "Logo de Vue.js", "src": "/vue.png" },
+			{
+				"name": "Vue.js",
+				"logoStyles": "vue",
+				"href": "https://vuejs.org/"
+			},
 			{
 				"name": "GraphQL",
-				"alt": "Logo de GraphQL",
-				"src": "/graphql-logo.png"
+				"logoStyles": "graphQl",
+				"href": "https://graphql.org/"
 			},
-			{ "name": "Redux.js", "alt": "Logo de Redux.js", "src": "/redux.png" },
 			{
-				"name": "Styled-Components",
-				"alt": "Logo de Styled-Components",
-				"src": "/styled-components.png"
+				"name": "Redux.js",
+				"logoStyles": "redux",
+				"href": "https://redux.js.org/"
 			},
-			{ "name": "Git", "alt": "Logo de Git", "src": "/git-logo.png" },
+			{
+				"name": "styled components",
+				"logoStyles": "styledComponents",
+				"href": "https://styled-components.com/"
+			},
+			{
+				"name": "Git",
+				"logoStyles": "git",
+				"href": "https://git-scm.com/"
+			},
 			{
 				"name": "JavaScript",
-				"alt": "Logo de JavaScript",
-				"src": "/javascript-32x32.png"
+				"logoStyles": "javascript",
+				"href": "https://www.javascript.com/"
 			}
 		]
 	},

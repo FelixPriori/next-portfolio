@@ -5,6 +5,11 @@
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
 	column-gap: 0.5rem;
+	row-gap: 0.25rem;
+}
+
+.linkWrapper {
+	text-decoration: none;
 }
 
 .logoItem {
@@ -12,8 +17,109 @@
 	align-items: center;
 	margin-bottom: 0.25rem;
 	white-space: nowrap;
-	> img {
-		margin-right: 1rem;
+	height: 42px;
+	gap: 1rem;
+	padding: 0.5rem 0.75rem;
+	border: 1px solid var(--color-text);
+	color: var(--color-text);
+	border-radius: var(--radius-box);
+	transition: all 200ms ease-in-out;
+
+	&:hover {
+		transform: translateY(-2px);
+		box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+			rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+	}
+
+	& > svg {
+		min-width: 22px;
+		min-height: 22px;
+	}
+
+	&.react {
+		background-color: #58c4da;
+		border-color: #58c4da;
+		color: #404756;
+	}
+
+	&.next {
+		background-color: #000;
+		border-color: #000;
+		color: #fff;
+	}
+
+	&.typescript {
+		background-color: #3178c6;
+		border-color: #3178c6;
+		color: #fff;
+	}
+
+	&.html {
+		background: linear-gradient(45deg, #e34c26, #e34c26, #f06529);
+		border-color: #e34c26;
+		color: #fff;
+	}
+
+	&.css {
+		background: linear-gradient(45deg, #264de4, #2965f1, #2965f1);
+		border-color: #2965f1;
+		color: #fff;
+	}
+
+	&.scss {
+		background-color: #bf4080;
+		border-color: #bf4080;
+		color: #fff;
+	}
+
+	&.materialUi {
+		background-color: #0073e6;
+		border-color: #0073e6;
+		color: #fff;
+	}
+
+	&.gatsby {
+		background-color: #663399;
+		border-bottom: #663399;
+		color: #fff;
+	}
+
+	&.vue {
+		background: linear-gradient(45deg, #42b883, #42b883, #35495e);
+		border-color: #42b883;
+		color: #fff;
+	}
+
+	&.graphQl {
+		background: linear-gradient(45deg, #e1009a, #f6009c);
+		border-color: #e1009a;
+		color: #fff;
+	}
+
+	&.redux {
+		background: linear-gradient(45deg, #764abc, #764abc, #845cc3);
+		border-color: #764abc;
+		color: #fff;
+	}
+
+	&.styledComponents {
+		background-color: #bf4f74;
+		border-color: #bf4f74;
+		color: #fff;
+		white-space: pre-wrap;
+		line-height: 0.75;
+	}
+
+	&.git {
+		background-color: #f14e32;
+		border-color: #f14e32;
+		color: #fff;
+	}
+
+	&.javascript {
+		background-color: #fcdc00;
+		border-color: #fcdc00;
+		color: #181818;
 	}
 }
 
