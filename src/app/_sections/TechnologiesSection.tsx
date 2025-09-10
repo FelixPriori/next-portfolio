@@ -12,7 +12,7 @@ export default function TechnologiesSection({
 			<div className={styles.subtitleWraper}>
 				<h2 className={styles.subtitle}>{technologiesSection.title}</h2>
 			</div>
-			<LogoList />
+			<LogoList logoList={technologiesSection.logoList} />
 		</section>
 	)
 }
