@@ -19,7 +19,7 @@ export default function FeatureLogo({
 				<SvgIcon icon={Icon.INDEPENDENT} />
 			</div>
 		)
-	} else if (companyName === 'The future') {
+	} else if (companyName === 'The future' || companyName === "L'avenir") {
 		return (
 			<div className={styles.reactIcon}>
 				<SvgIcon icon={Icon.ROCKET} />
