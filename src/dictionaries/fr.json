@@ -1,0 +1,226 @@
+{
+	"metadata": {
+		"title": "Portfolio de Félix",
+		"description": "Felix Rioux Sabourin - Professional Web Developer"
+	},
+	"navigation": {
+		"about": "À propos",
+		"technologies": "Technologies",
+		"work": "Parcours professionnel",
+		"training": "Formations",
+		"testimonials": "Témoignages",
+		"contact": "Contacter"
+	},
+	"theme": {
+		"legend": "Choisir un thème",
+		"light": "Thème clair",
+		"dark": "Thème sombre"
+	},
+	"introSection": {
+		"title": "Félix Rioux Sabourin",
+		"subtitle": "Développeur web professionnel",
+		"link": "/en",
+		"linkText": "EN",
+		"buttons": {
+			"contact": "Contacter",
+			"resume": "CV",
+			"resumeLink": "https://docs.google.com/document/d/1Y1xdSDuYI6onXKJE_YrqVC3lzU0u194H2ke4_5MZa5I/edit?tab=t.99v1xby88zob"
+		}
+	},
+	"aboutSection": {
+		"title": "À propos",
+		"paragraphs": [
+			"Avec plus de {{cinq ans d'expérience}} dans le développement front-end, je suis un professionnel dynamique et un passionné d'art, fasciné par le pouvoir transformateur de la programmation qui permet de donner vie à des idées. J'ai passé les quatre premières années de ma carrière à travailler pour des agences et j'ai contribué à {{plus d'une douzaine de projets clients}} dans un {{large éventail de secteurs}}.",
+			"Depuis novembre 2024, je travaille à temps plein à la création d'un {{SaaS interne}} en tant que {{consultant en développement web}}, mettant à profit mon expertise pour créer un service unique dans le domaine des chaînes d'approvisionnement.",
+			"Je me sens à l'aise lorsque je travaille au sein {{d'équipes soudées}} et je suis particulièrement satisfait lorsque je trouve {{une excellente solution à un problème complexe}}. Ce que j'aime le plus dans mon métier de développeur, c'est d'être dans un état d’immersion totale lorsque je code."
+		]
+	},
+	"technologiesSection": {
+		"title": "Technologies",
+		"logoList": [
+			{
+				"name": "React.js",
+				"alt": "Logo de React",
+				"src": "/react-32x32.png"
+			},
+			{
+				"name": "Next.js",
+				"alt": "Logo de NextJs",
+				"src": "/nextjs.png"
+			},
+			{
+				"name": "TypeScript",
+				"alt": "Logo de TypeScript",
+				"src": "/typescript.webp"
+			},
+			{
+				"name": "HTML5",
+				"alt": "Logo de HTML5",
+				"src": "/html5-32x32.png"
+			},
+			{
+				"name": "CSS3",
+				"alt": "Logo de CSS3",
+				"src": "/css3-32x32.png"
+			},
+			{
+				"name": "SCSS",
+				"alt": "Logo de SCSS",
+				"src": "/sass.png"
+			},
+			{
+				"name": "MaterialUI",
+				"alt": "Logo de MaterialUI",
+				"src": "/materialUI.png"
+			},
+			{
+				"name": "Gatsby.js",
+				"alt": "Logo de Gatsby.js",
+				"src": "/gatsby-monogram.png"
+			},
+			{ "name": "Vue.js", "alt": "Logo de Vue.js", "src": "/vue.png" },
+			{
+				"name": "GraphQL",
+				"alt": "Logo de GraphQL",
+				"src": "/graphql-logo.png"
+			},
+			{ "name": "Redux.js", "alt": "Logo de Redux.js", "src": "/redux.png" },
+			{
+				"name": "Styled-Components",
+				"alt": "Logo de Styled-Components",
+				"src": "/styled-components.png"
+			},
+			{ "name": "Git", "alt": "Logo de Git", "src": "/git-logo.png" },
+			{
+				"name": "JavaScript",
+				"alt": "Logo de JavaScript",
+				"src": "/javascript-32x32.png"
+			}
+		]
+	},
+	"workSection": {
+		"title": "Parcours professionnel",
+		"workHistory": [
+			{
+				"companyName": "Webisoft",
+				"position": "Développeur React",
+				"dateRange": "2020/05 - 2021/04",
+				"descriptionTitle": "Là où tout a commencé",
+				"description": "Après avoir obtenu mon diplôme de Lighthouse Labs en avril 2020, j'ai décroché un emploi chez Webisoft, une petite agence web start-up basée à Montréal. J'étais chargé de maintenir et de développer toutes leurs applications React.js, ce qui impliquait de travailler sur une application existante depuis longtemps, une application sur le point d'être lancée et une nouvelle application encore à ses débuts. La petite taille de l'entreprise et les différents champs d'application de chaque projet m'ont obligé à apprendre à m'adapter rapidement et de manière autonome à un nouvel environnement.",
+				"logoSrc": "/webisoft.png"
+			},
+			{
+				"companyName": "Nventive",
+				"position": "Développeur web full-stack",
+				"dateRange": "2021/04 - 2022/01",
+				"descriptionTitle": "Travail d'équipe.",
+				"description": "Chez Nventive, je faisais partie d'une grande entreprise où j'ai pu apprendre auprès de développeurs exceptionnels. J'ai travaillé sur divers projets, acquérant au passage de nouvelles compétences techniques telles que Vue.js, TypeScript et, très brièvement, C# / ASP.NET Core. J'ai eu de nombreuses occasions de programmer en binôme avec des développeurs seniors expérimentés qui m'ont enseigné des compétences précieuses en matière de travail d'équipe dans le domaine du développement logiciel.",
+				"logoSrc": "/nventive.png"
+			},
+			{
+				"companyName": "Nurun",
+				"position": "Développeur front-end",
+				"dateRange": "2022/01 - 2024/04",
+				"descriptionTitle": "Flexibilité et excellence",
+				"description": "J'ai été recruté début 2022 pour travailler chez Nurun, une agence web chevronnée qui compte de nombreux projets dans divers secteurs à travers le monde. J'ai travaillé pour des clients prestigieux tels que Hydro-Québec, Cadillac, Grant Thornton et l'Aéroport International Montréal-Trudeau, pour n'en citer que quelques-uns. J'ai dû m'adapter rapidement à de nouvelles technologies, de nouveaux projets et de nouvelles équipes, car je devais passer d'un mandat à l'autre tout en maintenant la meilleure qualité de code possible. Alors que je continuais à effectuer la majeure partie de mon travail dans React.js et TypeScript, j'ai dû apprendre sur le tas des technologies telles que GraphQL, Strapi, Storybook, CraftCMS, Stencil et Twig, pour n'en citer que quelques-unes. L'importance accordée à l'accessibilité m'a amené à travailler en étroite collaboration avec un expert WCAG afin de m'assurer que les applications répondaient aux normes d'accessibilité WCAG 2.0.",
+				"logoSrc": "/nurun.png"
+			},
+			{
+				"companyName": "Independent",
+				"position": "Développeur web indépendant",
+				"dateRange": "2024/04 - actuellement",
+				"descriptionTitle": "Indépendance et fiabilité",
+				"description": "Je travaille en tant que développeur web indépendant depuis avril 2024, créant des sites web statiques ainsi que des applications web. En tant que développeur indépendant, j'ai mis mes compétences à l'épreuve en travaillant et en contribuant à plusieurs projets tels que Rue Dorion, TimeStep, MontrealSwingCalendar, Campus Balboa et MTL BAL JAM. J'ai utilisé des technologies telles que Next.js et Gatsby.js pour la création de sites web statiques, associées à Contentful comme CMS headless. Pour les applications web avec un backend dédié, j'ai collaboré avec un ingénieur AWS en utilisant Node.js, AppSync, Amplify et Cognito, dans GraphQL. Je me suis efforcé d'apprendre autant que possible tout en travaillant sur ces projets, en m'assurant de rester à la pointe des technologies actuelles et en suivant parallèlement des cours Udemy.",
+				"logoSrc": "/avatar.jpg"
+			},
+			{
+				"companyName": "Traceology.ai",
+				"position": "Consultant en développement web",
+				"dateRange": "2024/11 - actuellement",
+				"descriptionTitle": "Évolutivité et solidité",
+				"description": "Je travaille comme ingénieur consultant en développement web chez Traceology.ai depuis novembre 2024. Il s'agit d'une start-up qui a développé un produit visant à apporter plus de transparence dans le domaine des chaînes d'approvisionnement. Il s'agit d'un produit de niche qui est actuellement très en demande, notamment pour des raisons géopolitiques. La quantité considérable de données requises par les planificateurs et les analystes de la chaîne d'approvisionnement pour que cette application soit utile pose de nombreux défis et nécessite des solutions créatives. Travailler au sein d'une équipe soudée rend ce produit particulièrement intéressant : un travail d'équipe harmonieux associé à une communication efficace est essentiel pour que tout se passe bien.",
+				"logoSrc": "/traceology.png"
+			},
+			{
+				"companyName": "L'avenir",
+				"dateRange": "2025 - ?",
+				"descriptionTitle": "Perspectives d'avenir",
+				"description": "Je suis actuellement disponible pour travailler ! Je suis intéressé soit par un poste dans une entreprise qui dispose d'un produit interne, soit par un poste dans une agence web. Mon expérience professionnelle m'a appris à m'adapter rapidement à un nouvel environnement et à de nouvelles équipes, à maîtriser des technologies sur le tas tout en maintenant une qualité de travail rigoureuse, et à toujours faire preuve de curiosité et d'ouverture d'esprit.",
+				"logoSrc": "/rocket.png"
+			}
+		]
+	},
+	"trainingSection": {
+		"title": "Formations",
+		"trainingHistory": [
+			{
+				"companyName": "Lighthouse Labs",
+				"certificate": "Bootcamp de développement web full-stack",
+				"dateRange": "2020/02 - 2020/04",
+				"logoSrc": "/lighthouselabs.png",
+				"description": "Au cours de ce bootcamp intensif de trois mois, j'ai acquis les compétences de base nécessaires pour devenir développeur web. Notre promotion a vécu une expérience unique, moitié en présentiel, moitié à distance, car la pandémie a frappé littéralement la semaine suivant notre projet de mi-parcours. Nous avons abordé de nombreuses technologies tout au long du cours, telles que JavaScript, Node.js, React.js, Express.js, Ruby et Ruby on Rails."
+			},
+			{
+				"companyName": "BrainStation",
+				"certificate": "Cours sur l'intelligence artificielle",
+				"dateRange": "2023/09 - 2023/10",
+				"logoSrc": "/brainstation.png",
+				"description": "Au cours de ce cours du soir de 4 semaines, nous avons abordé des concepts liés à l'IA tels que l'IA générative, la théorie derrière les LLM et les bases de l'ingénierie des prompts."
+			}
+		]
+	},
+	"testimonialsSection": {
+		"title": "Témoignages",
+		"testimonials": [
+			{
+				"personName": "Megan Sydiaha",
+				"position": "Stagiaire front-end",
+				"text": "J'ai travaillé avec Félix pendant un stage de deux mois au cours duquel il m'a directement encadré en individuel. Tout au long de ma collaboration avec lui, Félix s'est montré serviable, patient, sympathique et extrêmement compétent. Grâce à des discussions et à la programmation en binôme, il m'a aidé à comprendre des concepts de programmation importants en termes simples ; des leçons que je peux désormais mettre en pratique dans ma carrière de développeuse web en toute confiance. Felix serait un atout inestimable pour toute équipe de développement front-end.",
+				"photoSrc": "/megan-syd.png"
+			},
+			{
+				"personName": "Sheldon Malboeuf",
+				"position": "Développeur Full Stack, Chrono Innovation",
+				"text": "J'ai eu le plaisir de travailler avec Félix à plusieurs reprises au cours de ma carrière. Non seulement il crée une atmosphère conviviale et collaborative, mais il est également attentif aux détails. Il prend en compte plusieurs perspectives lorsqu'il choisit ses solutions et fait montre les qualités que toute équipe de développement considérerait comme des atouts.",
+				"photoSrc": "/sheldon.png"
+			}
+		]
+	},
+	"contactSection": {
+		"title": "Contacter",
+		"subtitle": "N'hesitez pas à me contacter !",
+		"contactForm": {
+			"successMessageOne": "Merci de m'avoir contacté !",
+			"successMessageTwo": "Je vais vous répondre dès que possible.",
+			"required": "requis",
+			"name": "Nom",
+			"namePlaceholder": "Votre nom",
+			"nameError": "S.V.P. inscrivez votre nom !",
+			"email": "Courriel",
+			"emailPlaceholder": "exemple@exemple.ca",
+			"emailError": "S.V.P. inscrivez votre courriel !",
+			"message": "Message",
+			"messagePlaceholder": "Écrivez votre message ici...",
+			"messageError": "S.V.P. écrire votre message !",
+			"send": "Envoyer"
+		}
+	},
+	"legalSection": {
+		"github": {
+			"preText": "Touvez le",
+			"linkText": "code source",
+			"postText": "sur GitHub"
+		},
+		"madeWith": {
+			"preText": "Fait avec",
+			"linkText": "Next.js"
+		},
+		"hostedOn": {
+			"preText": "Déployé sur",
+			"linkText": "Vercel"
+		},
+		"copyright": {
+			"preText": "Felix Rioux Sabourin 2025"
+		}
+	}
+}

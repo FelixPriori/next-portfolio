@@ -7,8 +7,13 @@ import { getErrorMessage } from '@/app/_utils/errors'
 import { Button, ButtonVariant, ErrorParagraph } from '@/app/_components'
 import { contactSchema, ContactType } from './schema'
 import styles from './contactForm.module.scss'
+import { DictionaryType } from '@/dictionaries'
 
-export default function ContactForm() {
+export default function ContactForm({
+	contactForm,
+}: {
+	contactForm: DictionaryType['contactSection']['contactForm']
+}) {
 	const [success, setSuccess] = useState(false)
 	const {
 		register,
@@ -57,8 +62,8 @@ export default function ContactForm() {
 						strokeWidth="3"
 					/>
 				</svg>
-				<p className={styles.successMessage}>Thank you for reaching out!</p>
-				<p>I will get back to you as soon as possible.</p>
+				<p className={styles.successMessage}>{contactForm.successMessageOne}</p>
+				<p>{contactForm.successMessageTwo}</p>
 			</div>
 		)
 	}
@@ -72,15 +77,16 @@ export default function ContactForm() {
 			/>
 			<div className={styles.formInputWrapper}>
 				<label className={styles.label} id="name-lbl" htmlFor="contact-name">
-					Name <span className={styles.required}>(required)</span>
+					{contactForm.name}{' '}
+					<span className={styles.required}>({contactForm.required})</span>
 				</label>
 				<input
 					required
-					className={`${styles.input} ${errors.email ? styles.error : ''}`}
+					className={`${styles.input} ${errors.name ? styles.error : ''}`}
 					id="contact-name"
 					aria-labelledby="name-lbl"
 					type="text"
-					placeholder="Your name"
+					placeholder={contactForm.namePlaceholder}
 					autoComplete="on"
 					{...register('name')}
 				/>
@@ -88,22 +94,25 @@ export default function ContactForm() {
 					<ErrorMessage
 						errors={errors}
 						name="name"
-						render={({ message }) => <ErrorParagraph>{message}</ErrorParagraph>}
+						render={() => (
+							<ErrorParagraph>{contactForm.nameError}</ErrorParagraph>
+						)}
 					/>
 				)}
 			</div>
 
 			<div className={styles.formInputWrapper}>
 				<label className={styles.label} id="email-lbl" htmlFor="contact-email">
-					Email <span className={styles.required}>(required)</span>
+					{contactForm.email}{' '}
+					<span className={styles.required}>({contactForm.required})</span>
 				</label>
 				<input
 					required
-					className={`${styles.input} ${errors.message ? styles.error : ''}`}
+					className={`${styles.input} ${errors.email ? styles.error : ''}`}
 					id="contact-email"
 					aria-labelledby="email-lbl"
 					type="email"
-					placeholder="example@example.ca"
+					placeholder={contactForm.emailPlaceholder}
 					autoComplete="on"
 					{...register('email')}
 				/>
@@ -111,7 +120,9 @@ export default function ContactForm() {
 					<ErrorMessage
 						errors={errors}
 						name="email"
-						render={({ message }) => <ErrorParagraph>{message}</ErrorParagraph>}
+						render={() => (
+							<ErrorParagraph>{contactForm.emailError}</ErrorParagraph>
+						)}
 					/>
 				)}
 			</div>
@@ -122,14 +133,15 @@ export default function ContactForm() {
 					id="message-lbl"
 					htmlFor="contact-message"
 				>
-					Message <span className={styles.required}>(required)</span>
+					{contactForm.message}{' '}
+					<span className={styles.required}>({contactForm.required})</span>
 				</label>
 				<textarea
 					required
 					className={`${styles.textArea} ${errors.message ? styles.error : ''}`}
 					aria-labelledby="message-lbl"
 					id="contact-message"
-					placeholder="Type your message here..."
+					placeholder={contactForm.messagePlaceholder}
 					rows={6}
 					maxLength={500}
 					{...register('message')}
@@ -138,14 +150,16 @@ export default function ContactForm() {
 					<ErrorMessage
 						errors={errors}
 						name="message"
-						render={({ message }) => <ErrorParagraph>{message}</ErrorParagraph>}
+						render={() => (
+							<ErrorParagraph>{contactForm.messageError}</ErrorParagraph>
+						)}
 					/>
 				)}
 			</div>
 
 			<div className={styles.buttonWrapper}>
 				<Button variant={ButtonVariant.SUBMIT} type="submit">
-					Send
+					{contactForm.send}
 				</Button>
 			</div>
 		</form>

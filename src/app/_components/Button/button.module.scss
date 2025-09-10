@@ -5,7 +5,7 @@
 	font-weight: 700;
 	letter-spacing: 0.2ch;
 	padding: var(--padding-button);
-	transition: background-color 200ms ease-in;
+	transition: background-color 100ms ease-in;
 	text-decoration: none;
 	font-family: var(--font-nunito);
 	border-radius: var(--radius-box);
@@ -40,13 +40,16 @@
 	}
 
 	&.darkOutline {
-		border: 1px solid var(--color-primary-dark);
-		color: var(--color-primary-dark);
-		border: 1px solid var(--color-primary-dark);
+		border: 1px solid var(--color-text);
+		color: var(--color-text);
+		border: 1px solid var(--color-text);
+		padding: 0.75rem;
+		border-radius: var(--radius-full);
 
 		&:hover {
-			border: 1px solid var(--color-dark);
-			color: var(--color-dark);
+			border: 1px solid var(--color-text);
+			color: var(--color-background);
+			background-color: var(--color-text);
 		}
 	}
 

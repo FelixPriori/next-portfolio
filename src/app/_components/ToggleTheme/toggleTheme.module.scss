@@ -1,6 +1,5 @@
 .unmounted {
-	height: 77px;
-	padding: 1rem;
+	height: 48px;
 
 	.innerUnmounted {
 		width: 116px;
@@ -13,11 +12,10 @@
 .toggleThemeWrapper {
 	display: flex;
 	justify-content: center;
-	margin-bottom: 2rem;
 }
 
 .fieldset {
-	padding: 1rem;
+	padding: 0;
 	border: 0;
 }
 

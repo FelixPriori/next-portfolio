@@ -1,32 +1,40 @@
 import { Icon, MadeWith } from '@/app/_components'
 import styles from './sections.module.scss'
 import layoutStyles from '../layout.module.scss'
+import { DictionaryType } from '@/dictionaries'
 
-export default function LegalSection() {
+export default function LegalSection({
+	legalSection,
+}: {
+	legalSection: DictionaryType['legalSection']
+}) {
 	return (
 		<div className={styles.legalWrapper}>
 			<div className={layoutStyles.main}>
 				<div className={styles.legalContents}>
 					<MadeWith
-						preText="Check out the"
+						preText={legalSection.github.preText}
 						icon={Icon.GITHUB}
-						linkText="source code"
+						linkText={legalSection.github.linkText}
 						linkHref="https://github.com/FelixPriori/next-portfolio"
-						postText="on GitHub"
+						postText={legalSection.github.postText}
 					/>
 					<MadeWith
-						preText="Made with"
+						preText={legalSection.madeWith.preText}
 						icon={Icon.NEXT}
-						linkText="Next.js"
+						linkText={legalSection.madeWith.linkText}
 						linkHref="https://nextjs.org/"
 					/>
 					<MadeWith
-						preText="Hosted on"
+						preText={legalSection.hostedOn.preText}
 						icon={Icon.VERCEL}
 						linkText="Vercel"
-						linkHref="https://vercel.com/f"
+						linkHref={legalSection.hostedOn.linkText}
 					/>
-					<MadeWith preText="Felix Rioux Sabourin 2025" icon={Icon.COPYRIGHT} />
+					<MadeWith
+						preText={legalSection.copyright.preText}
+						icon={Icon.COPYRIGHT}
+					/>
 				</div>
 			</div>
 		</div>

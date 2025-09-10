@@ -3,6 +3,14 @@
 	padding-top: var(--padding-section-large);
 }
 
+.settings {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.5rem;
+	margin-bottom: 2rem;
+}
+
 .heroWrapper {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));

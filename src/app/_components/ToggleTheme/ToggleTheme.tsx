@@ -3,8 +3,13 @@ import { useEffect, useState } from 'react'
 import { useTheme } from 'next-themes'
 import { Icon, SvgIcon } from '../SvgIcon'
 import styles from './toggleTheme.module.scss'
+import { DictionaryType } from '@/dictionaries'
 
-export default function ToggleTheme() {
+export default function ToggleTheme({
+	themeText,
+}: {
+	themeText: DictionaryType['theme']
+}) {
 	const [mounted, setMounted] = useState(false)
 	const { theme, setTheme } = useTheme()
 
@@ -28,7 +33,7 @@ export default function ToggleTheme() {
 	return (
 		<div className={styles.toggleThemeWrapper}>
 			<fieldset className={styles.fieldset}>
-				<legend className={styles.visuallyHidden}>Choose theme</legend>
+				<legend className={styles.visuallyHidden}>{themeText.legend}</legend>
 				<div className={styles.innerContainer}>
 					<label
 						tabIndex={0}
@@ -53,7 +58,7 @@ export default function ToggleTheme() {
 							name="theme"
 							value="light"
 						/>
-						<span className={styles.visuallyHidden}>Light Theme</span>
+						<span className={styles.visuallyHidden}>{themeText.light}</span>
 						<div className={styles.svgContainer}>
 							<SvgIcon icon={Icon.SUN} />
 						</div>
@@ -81,7 +86,7 @@ export default function ToggleTheme() {
 							name="theme"
 							value="dark"
 						/>
-						<span className={styles.visuallyHidden}>Dark Theme</span>
+						<span className={styles.visuallyHidden}>{themeText.dark}</span>
 						<div className={styles.svgContainer}>
 							<SvgIcon icon={Icon.MOON} />
 						</div>
