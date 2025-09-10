@@ -1,5 +1,4 @@
 import styles from './logo.module.scss'
-import Link from 'next/link'
 import { FaReact } from 'react-icons/fa'
 import { SiNextdotjs } from 'react-icons/si'
 import { SiTypescript } from 'react-icons/si'
@@ -55,7 +54,7 @@ export default function LogoItem({ name, logoStyles, href }: LogoItemProps) {
 		}
 	}
 	return (
-		<Link
+		<a
 			className={styles.linkWrapper}
 			href={href}
 			rel="noreferrer noopener"
@@ -65,6 +64,6 @@ export default function LogoItem({ name, logoStyles, href }: LogoItemProps) {
 				{renderLogo()}
 				{name}
 			</li>
-		</Link>
+		</a>
 	)
 }
