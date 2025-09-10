@@ -11,12 +11,22 @@ import { DictionaryType } from '@/dictionaries'
 
 export default function IntroSection({
 	introSection,
+	theme,
 }: {
 	introSection: DictionaryType['introSection']
+	theme: DictionaryType['theme']
 }) {
 	return (
 		<section className={`${styles.headerSection} section`} id="intro">
-			<ToggleTheme />
+			<div className={styles.settings}>
+				<ToggleTheme themeText={theme} />
+				<ButtonLink
+					variant={ButtonVariant.DARK_OUTLINE}
+					href={introSection.link}
+				>
+					{introSection.linkText}
+				</ButtonLink>
+			</div>
 			<div className={styles.heroWrapper}>
 				<div className={styles.textWrapper}>
 					<div className={styles.textInnerWrapper}>

@@ -11,9 +11,16 @@
 		"testimonials": "Témoignages",
 		"contact": "Contacter"
 	},
+	"theme": {
+		"legend": "Choisir un thème",
+		"light": "Thème clair",
+		"dark": "Thème sombre"
+	},
 	"introSection": {
 		"title": "Félix Rioux Sabourin",
 		"subtitle": "Développeur web professionnel",
+		"link": "/en",
+		"linkText": "EN",
 		"buttons": {
 			"contact": "Contacter",
 			"resume": "CV",

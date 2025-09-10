@@ -29,6 +29,7 @@ export default async function Home({ params }: Props) {
 	const {
 		navigation,
 		introSection,
+		theme,
 		aboutSection,
 		technologiesSection,
 		workSection,
@@ -41,7 +42,7 @@ export default async function Home({ params }: Props) {
 		<div>
 			<main className={styles.main}>
 				<SectionDisplayer navigation={navigation} />
-				<IntroSection introSection={introSection} />
+				<IntroSection introSection={introSection} theme={theme} />
 				<AboutSection aboutSection={aboutSection} />
 				<TechnologiesSection technologiesSection={technologiesSection} />
 				<WorkSection workSection={workSection} />

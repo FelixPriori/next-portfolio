@@ -11,9 +11,16 @@
 		"testimonials": "Testimonials",
 		"contact": "Contact"
 	},
+	"theme": {
+		"legend": "Choose theme",
+		"light": "Light theme",
+		"dark": "Dark theme"
+	},
 	"introSection": {
 		"title": "Félix Rioux Sabourin",
 		"subtitle": "Professional Web Developer",
+		"link": "/fr",
+		"linkText": "FR",
 		"buttons": {
 			"contact": "Contact",
 			"resume": "Resume",
