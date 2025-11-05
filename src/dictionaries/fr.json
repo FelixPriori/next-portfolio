@@ -74,11 +74,6 @@
 				"href": "https://mui.com/material-ui/"
 			},
 			{
-				"name": "Gatsby.js",
-				"logoStyles": "gatsby",
-				"href": "https://www.gatsbyjs.com/"
-			},
-			{
 				"name": "Vue.js",
 				"logoStyles": "vue",
 				"href": "https://vuejs.org/"
@@ -142,7 +137,7 @@
 				"position": "Développeur web indépendant",
 				"dateRange": "2024/04 - actuellement",
 				"descriptionTitle": "Indépendance et fiabilité",
-				"description": "Je travaille en tant que développeur web indépendant depuis avril 2024, créant des sites web statiques ainsi que des applications web. En tant que développeur indépendant, j'ai mis mes compétences à l'épreuve en travaillant et en contribuant à plusieurs projets tels que Rue Dorion, TimeStep, MontrealSwingCalendar, Campus Balboa et MTL BAL JAM. J'ai utilisé des technologies telles que Next.js et Gatsby.js pour la création de sites web statiques, associées à Contentful comme CMS headless. Pour les applications web avec un backend dédié, j'ai collaboré avec un ingénieur AWS en utilisant Node.js, AppSync, Amplify et Cognito, dans GraphQL. Je me suis efforcé d'apprendre autant que possible tout en travaillant sur ces projets, en m'assurant de rester à la pointe des technologies actuelles et en suivant parallèlement des cours Udemy.",
+				"description": "Je travaille en tant que développeur web indépendant depuis avril 2024, créant des sites web statiques ainsi que des applications web. En tant que développeur indépendant, j'ai mis mes compétences à l'épreuve en travaillant et en contribuant à plusieurs projets tels que Rue Dorion, TimeStep, MontrealSwingCalendar, Campus Balboa et MTL BAL JAM. J'ai utilisé des technologies telles que Next.js pour la création de sites web statiques, associées à Contentful comme CMS headless. Pour les applications web avec un backend dédié, j'ai collaboré avec un ingénieur AWS en utilisant Node.js, AppSync, Amplify et Cognito, dans GraphQL. Je me suis efforcé d'apprendre autant que possible tout en travaillant sur ces projets, en m'assurant de rester à la pointe des technologies actuelles et en suivant parallèlement des cours Udemy.",
 				"logoSrc": "/avatar.jpg"
 			},
 			{
