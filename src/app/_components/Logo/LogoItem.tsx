@@ -6,7 +6,6 @@ import { FaHtml5 } from 'react-icons/fa'
 import { FaCss3Alt } from 'react-icons/fa'
 import { SiSass } from 'react-icons/si'
 import { SiMui } from 'react-icons/si'
-import { RiGatsbyFill } from 'react-icons/ri'
 import { BiLogoVuejs } from 'react-icons/bi'
 import { GrGraphQl } from 'react-icons/gr'
 import { SiRedux } from 'react-icons/si'
@@ -37,8 +36,6 @@ export default function LogoItem({ name, logoStyles, href }: LogoItemProps) {
 				return <SiSass />
 			case 'materialUi':
 				return <SiMui />
-			case 'gatsby':
-				return <RiGatsbyFill />
 			case 'vue':
 				return <BiLogoVuejs />
 			case 'graphQl':
