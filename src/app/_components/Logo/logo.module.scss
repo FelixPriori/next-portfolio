@@ -115,6 +115,22 @@
 		border-color: #fcdc00;
 		color: #181818;
 	}
+
+	&.mailchimp {
+		background-color: #fde01a;
+		color: #000000;
+	}
+
+	&.contentful {
+		background: linear-gradient(45deg, #fdda00, #2373eb);
+		color: #2b2d31;
+	}
+
+	&.netlify {
+		background-color: #292f35;
+		color: #32e6e2;
+		border-color: #292f35;
+	}
 }
 
 .image {

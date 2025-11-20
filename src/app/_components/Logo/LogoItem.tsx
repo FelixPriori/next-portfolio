@@ -12,6 +12,9 @@ import { SiRedux } from 'react-icons/si'
 import { SiStyledcomponents } from 'react-icons/si'
 import { FaGitAlt } from 'react-icons/fa6'
 import { IoLogoJavascript } from 'react-icons/io5'
+import { FaMailchimp } from 'react-icons/fa'
+import { SiContentful } from 'react-icons/si'
+import { SiNetlify } from 'react-icons/si'
 
 export interface LogoItemProps {
 	name: string
@@ -48,6 +51,12 @@ export default function LogoItem({ name, logoStyles, href }: LogoItemProps) {
 				return <FaGitAlt />
 			case 'javascript':
 				return <IoLogoJavascript />
+			case 'mailchimp':
+				return <FaMailchimp />
+			case 'contentful':
+				return <SiContentful />
+			case 'netlify':
+				return <SiNetlify />
 		}
 	}
 	return (

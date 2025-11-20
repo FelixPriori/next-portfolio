@@ -12,6 +12,7 @@ import {
 	TestimonialsSection,
 	ContactSection,
 	LegalSection,
+	ProjectsSection,
 } from '@/app/_sections'
 
 type Props = {
@@ -32,6 +33,7 @@ export default async function Home({ params }: Props) {
 		theme,
 		aboutSection,
 		technologiesSection,
+		projectsSection,
 		workSection,
 		trainingSection,
 		testimonialsSection,
@@ -46,6 +48,7 @@ export default async function Home({ params }: Props) {
 				<AboutSection aboutSection={aboutSection} />
 				<TechnologiesSection technologiesSection={technologiesSection} />
 				<WorkSection workSection={workSection} />
+				<ProjectsSection projectsSection={projectsSection} />
 				<TrainingSection trainingSection={trainingSection} />
 				<TestimonialsSection testimonialsSection={testimonialsSection} />
 			</main>

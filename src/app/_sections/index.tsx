@@ -1,6 +1,7 @@
 export { default as IntroSection } from './IntroSection'
 export { default as AboutSection } from './AboutSection'
 export { default as TechnologiesSection } from './TechnologiesSection'
+export { default as ProjectsSection } from './ProjectsSection'
 export { default as WorkSection } from './WorkSection'
 export { default as TrainingSection } from './TrainingSection'
 export { default as TestimonialsSection } from './TestimonialsSection'
