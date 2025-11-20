@@ -6,6 +6,7 @@
 	"navigation": {
 		"about": "À propos",
 		"technologies": "Technologies",
+		"projects": "Projects",
 		"work": "Parcours professionnel",
 		"training": "Formations",
 		"testimonials": "Témoignages",
@@ -105,6 +106,68 @@
 			}
 		]
 	},
+	"projectsSection": {
+		"title": "Projets",
+		"projects": [
+			{
+				"title": "Rue Dorion",
+				"desktopImage": "/mockup-rue-dorion-desktop.png",
+				"mobileImage": "/mockup-rue-dorion-mobile.png",
+				"website": "https://ruedorion.ca/",
+				"projectType": "Site web d'une compagnie d'édition de livres",
+				"description": "Le client voulait un site web flexible lui permettant de montrer ses nouvelles publications de livres. À partir de son compte Contentful CMS, il peut à tout moment créer un nouveau livre, ce qui génère dynamiquement une nouvelle page contenant tous les détails du livre, un lien pour l'acheter, une liste de recommandations de publications simliaires et tout le SEO qui s'y ratache. La page d'accueil montre toutes les couvertures de livres visuellement et sont triables et filtables.",
+				"technilogiesTitle": "Technologies utilisées dans ce projet :",
+				"visitButtonText": "Visitez le site web",
+				"technologies": [
+					{
+						"name": "React.js",
+						"logoStyles": "react",
+						"href": "https://react.dev/"
+					},
+					{
+						"name": "Next.js",
+						"logoStyles": "next",
+						"href": "https://nextjs.org/"
+					},
+					{
+						"name": "TypeScript",
+						"logoStyles": "typescript",
+						"href": "https://www.typescriptlang.org/"
+					},
+					{
+						"name": "HTML5",
+						"logoStyles": "html",
+						"href": "https://developer.mozilla.org/en-US/docs/Web/HTML"
+					},
+					{
+						"name": "CSS3",
+						"logoStyles": "css",
+						"href": "https://developer.mozilla.org/en-US/docs/Web/CSS"
+					},
+					{
+						"name": "SCSS",
+						"logoStyles": "scss",
+						"href": "https://sass-lang.com/"
+					},
+					{
+						"name": "Contentful",
+						"logoStyles": "contentful",
+						"href": "https://www.contentful.com/"
+					},
+					{
+						"name": "Mailchimp",
+						"logoStyles": "mailchimp",
+						"href": "https://mailchimp.com/"
+					},
+					{
+						"name": "Netlify",
+						"logoStyles": "netlify",
+						"href": "https://www.netlify.com/"
+					}
+				]
+			}
+		]
+	},
 	"workSection": {
 		"title": "Parcours professionnel",
 		"workHistory": [
@@ -143,9 +206,9 @@
 			{
 				"companyName": "Traceology.ai",
 				"position": "Consultant en développement web",
-				"dateRange": "2024/11 - actuellement",
+				"dateRange": "2024/11 - 2025/10",
 				"descriptionTitle": "Évolutivité et solidité",
-				"description": "Je travaille comme ingénieur consultant en développement web chez Traceology.ai depuis novembre 2024. Il s'agit d'une start-up qui a développé un produit visant à apporter plus de transparence dans le domaine des chaînes d'approvisionnement. Il s'agit d'un produit de niche qui est actuellement très en demande, notamment pour des raisons géopolitiques. La quantité considérable de données requises par les planificateurs et les analystes de la chaîne d'approvisionnement pour que cette application soit utile pose de nombreux défis et nécessite des solutions créatives. Travailler au sein d'une équipe soudée rend ce produit particulièrement intéressant : un travail d'équipe harmonieux associé à une communication efficace est essentiel pour que tout se passe bien.",
+				"description": "J'ai travaillé en tant que consultant en développement web chez Traceology.ai entre novembre 2024 et octobre 2025. Il s'agit d'une start-up qui a développé un produit visant à apporter plus de transparence dans le domaine des chaînes d'approvisionnement. Il s'agit d'un produit de niche qui est actuellement très en demande, notamment pour des raisons géopolitiques. La quantité considérable de données requises par les planificateurs et les analystes de la chaîne d'approvisionnement pour que cette application soit utile pose de nombreux défis et nécessite des solutions créatives. Travailler au sein d'une équipe soudée rend ce produit particulièrement intéressant : un travail d'équipe harmonieux associé à une communication efficace est essentiel pour que tout se passe bien.",
 				"logoSrc": "/traceology.png"
 			},
 			{

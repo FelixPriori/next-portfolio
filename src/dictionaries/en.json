@@ -6,6 +6,7 @@
 	"navigation": {
 		"about": "About",
 		"technologies": "Technologies",
+		"projects": "Projects",
 		"work": "Work History",
 		"training": "Training",
 		"testimonials": "Testimonials",
@@ -106,6 +107,68 @@
 			}
 		]
 	},
+	"projectsSection": {
+		"title": "Projects",
+		"projects": [
+			{
+				"title": "Rue Dorion",
+				"desktopImage": "/mockup-rue-dorion-desktop.png",
+				"mobileImage": "/mockup-rue-dorion-mobile.png",
+				"website": "https://ruedorion.ca/",
+				"projectType": "Book editor company website",
+				"description": "This client needed a flexible website that could show new books as they are announced and published. Using Contentful CMS, the client can create a new book, which will dynamically generate a page containing all the details of that book, as well as a link to purchase it, recommendations of similar books, and all the SEO that comes with it. The landing page shows all the book covers visually, which can be sorted and searched.",
+				"technilogiesTitle": "Technologies used in this project:",
+				"visitButtonText": "Visit website",
+				"technologies": [
+					{
+						"name": "React.js",
+						"logoStyles": "react",
+						"href": "https://react.dev/"
+					},
+					{
+						"name": "Next.js",
+						"logoStyles": "next",
+						"href": "https://nextjs.org/"
+					},
+					{
+						"name": "TypeScript",
+						"logoStyles": "typescript",
+						"href": "https://www.typescriptlang.org/"
+					},
+					{
+						"name": "HTML5",
+						"logoStyles": "html",
+						"href": "https://developer.mozilla.org/en-US/docs/Web/HTML"
+					},
+					{
+						"name": "CSS3",
+						"logoStyles": "css",
+						"href": "https://developer.mozilla.org/en-US/docs/Web/CSS"
+					},
+					{
+						"name": "SCSS",
+						"logoStyles": "scss",
+						"href": "https://sass-lang.com/"
+					},
+					{
+						"name": "Contentful",
+						"logoStyles": "contentful",
+						"href": "https://www.contentful.com/"
+					},
+					{
+						"name": "Mailchimp",
+						"logoStyles": "mailchimp",
+						"href": "https://mailchimp.com/"
+					},
+					{
+						"name": "Netlify",
+						"logoStyles": "netlify",
+						"href": "https://www.netlify.com/"
+					}
+				]
+			}
+		]
+	},
 	"workSection": {
 		"title": "Work History",
 		"workHistory": [
@@ -144,9 +207,9 @@
 			{
 				"companyName": "Traceology.ai",
 				"position": "Consultant Web Development Engineer",
-				"dateRange": "2024/11 - Current",
+				"dateRange": "2024/11 - 2025/10",
 				"descriptionTitle": "Scalability & Strength",
-				"description": "I have been working as a web development engineer consultant at Traceology.ai since November of 2024. It is a startup that has an in-house product which aims to provide more transparency in the field of supply chains. This is a niche product that is currently in high demand partly due to geopolitical reasons. The sheer amount of data that is required for supply chain planners and analysts for this app to be useful creates many challenges and requires creative solutions. Working in a tight-knit team makes this product especially fun to work on: seamless teamwork coupled with a strong communication is crucial for everything to go smoothly.",
+				"description": "I worked as a web development engineer consultant at Traceology.ai from November of 2024, until October of 2025. It is a startup that has an in-house product which aims to provide more transparency in the field of supply chains. This is a niche product that is currently in high demand partly due to geopolitical reasons. The sheer amount of data that is required for supply chain planners and analysts for this app to be useful creates many challenges and requires creative solutions. Working in a tight-knit team makes this product especially fun to work on: seamless teamwork coupled with a strong communication is crucial for everything to go smoothly.",
 				"logoSrc": "/traceology.png"
 			},
 			{
