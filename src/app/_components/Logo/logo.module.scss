@@ -10,12 +10,19 @@
 
 .linkWrapper {
 	text-decoration: none;
+	margin-bottom: 0.25rem;
+
+	&:focus {
+		box-shadow: none;
+		outline: 2px solid var(--color-primary-light);
+		outline-offset: 2px;
+		border-radius: var(--radius-box);
+	}
 }
 
 .logoItem {
 	display: flex;
 	align-items: center;
-	margin-bottom: 0.25rem;
 	white-space: nowrap;
 	height: 42px;
 	gap: 1rem;
