@@ -42,6 +42,7 @@ export default function IntroSection({
 							height={341}
 							alt="Félix's avatar"
 							src="/avatar.jpg"
+							loading="eager"
 						/>
 					</div>
 					<Socials />
