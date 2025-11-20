@@ -31,6 +31,12 @@
 		&:hover {
 			text-decoration: underline;
 		}
+
+		&:focus {
+			outline: 2px solid var(--color-primary-light);
+			outline-offset: 2px;
+			border-radius: var(--radius-box);
+		}
 	}
 	.current {
 		font-weight: 700;

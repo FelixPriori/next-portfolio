@@ -10,12 +10,19 @@
 
 .linkWrapper {
 	text-decoration: none;
+	margin-bottom: 0.25rem;
+
+	&:focus {
+		box-shadow: none;
+		outline: 2px solid var(--color-primary-light);
+		outline-offset: 2px;
+		border-radius: var(--radius-box);
+	}
 }
 
 .logoItem {
 	display: flex;
 	align-items: center;
-	margin-bottom: 0.25rem;
 	white-space: nowrap;
 	height: 42px;
 	gap: 1rem;
@@ -114,6 +121,22 @@
 		background-color: #fcdc00;
 		border-color: #fcdc00;
 		color: #181818;
+	}
+
+	&.mailchimp {
+		background-color: #fde01a;
+		color: #000000;
+	}
+
+	&.contentful {
+		background: linear-gradient(45deg, #fdda00, #2373eb);
+		color: #2b2d31;
+	}
+
+	&.netlify {
+		background-color: #292f35;
+		color: #32e6e2;
+		border-color: #292f35;
 	}
 }
 

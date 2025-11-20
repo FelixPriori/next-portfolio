@@ -1,0 +1,20 @@
+.projectLogoWrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	margin-bottom: 0.5rem;
+}
+
+.projectName {
+	font-size: clamp(1.25rem, 0.6424rem + 1.2658vw, 1.75rem);
+}
+
+.technologiesTitle {
+	margin-bottom: 0;
+}
+
+.projectType {
+	margin: 0;
+	padding: 0;
+	font-weight: 700;
+}

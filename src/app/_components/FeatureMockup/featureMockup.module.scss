@@ -1,0 +1,10 @@
+.image {
+	border-radius: var(--radius-box);
+	max-height: 350px;
+	max-width: fit-content;
+	object-fit: contain;
+
+	&.isMobile {
+		max-height: 200px;
+	}
+}

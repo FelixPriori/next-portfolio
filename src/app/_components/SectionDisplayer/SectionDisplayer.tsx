@@ -37,6 +37,12 @@ export default function SectionDisplayer({
 					{navigation.work}
 				</a>
 				<a
+					className={`${currentSection === 'projects' ? styles.current : ''}`}
+					href="#projects"
+				>
+					{navigation.projects}
+				</a>
+				<a
 					className={`${currentSection === 'training' ? styles.current : ''}`}
 					href="#training"
 				>
