@@ -114,7 +114,7 @@
 				"desktopImage": "/mockup-rue-dorion-desktop.png",
 				"mobileImage": "/mockup-rue-dorion-mobile.png",
 				"website": "https://ruedorion.ca/",
-				"projectType": "Site web d'une compagnie d'édition de livres",
+				"projectType": "Site web d'une maison d'édition de livres",
 				"description": "Le client voulait un site web flexible lui permettant de montrer ses nouvelles publications de livres. À partir de son compte Contentful CMS, il peut à tout moment créer un nouveau livre, ce qui génère dynamiquement une nouvelle page contenant tous les détails du livre, un lien pour l'acheter, une liste de recommandations de publications simliaires et tout le SEO qui s'y ratache. La page d'accueil montre toutes les couvertures de livres visuellement et sont triables et filtables.",
 				"technilogiesTitle": "Technologies utilisées dans ce projet :",
 				"visitButtonText": "Visitez le site web",
