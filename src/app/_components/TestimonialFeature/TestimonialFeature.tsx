@@ -20,8 +20,8 @@ export default function TestimonialFeature({
 				className={styles.image}
 				src={photoSrc}
 				alt={`${personName}'s Photo`}
-				width={250}
-				height={250}
+				width={1080}
+				height={1080}
 			/>
 			<h3 className={styles.name}>{personName}</h3>
 			<p className={styles.position}>{position}</p>
