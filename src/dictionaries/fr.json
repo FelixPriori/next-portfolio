@@ -253,6 +253,12 @@
 				"position": "Développeur Full Stack, Chrono Innovation",
 				"text": "J'ai eu le plaisir de travailler avec Félix à plusieurs reprises au cours de ma carrière. Non seulement il crée une atmosphère conviviale et collaborative, mais il est également attentif aux détails. Il prend en compte plusieurs perspectives lorsqu'il choisit ses solutions et fait montre les qualités que toute équipe de développement considérerait comme des atouts.",
 				"photoSrc": "/sheldon.png"
+			},
+			{
+				"personName": "Nicholas Tran",
+				"position": "Gestionnaire en ingénierie, EquipmentShare",
+				"text": "Félix est un excellent ingénieur Frontend. Il possède une connaissance approfondie de son domaine technique et une vaste expérience qui soutient la qualité de son travail. Il fait preuve de rigueur tant dans l’implémentation technique que dans la compréhension du domaine produit. Je soutiendrais pleinement ses futures démarches, et ses prochains gestionnaires auront beaucoup de chance de l’avoir dans leur équipe.",
+				"photoSrc": "/nicholas.png"
 			}
 		]
 	},
